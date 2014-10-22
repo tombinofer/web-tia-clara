@@ -1,0 +1,26 @@
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+body {
+	width:70%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background: #E5E900;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Lora"
+}
+
+aside {
+    border-top-width: 1px;
+    border-top-color: #ccc;
+    border: 1px #f2f200 solid; 
+    background: #fff62c;
+    border-radius: 4px;
+    padding: 0 1em;
+}
