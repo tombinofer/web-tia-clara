@@ -1,26 +1,48 @@
-@import url("normalize.css");
+
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 body {
-	width:70%;
+	width:100%;
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
-	background: #E5E900;
+	background: #E5EA36;
 	font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4 {
-	font-family: "Lora"
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lora";
 }
 
 aside {
     border-top-width: 1px;
     border-top-color: #ccc;
-    border: 1px #f2f200 solid; 
-    background: #fff62c;
     border-radius: 4px;
     padding: 0 1em;
+}
+
+footer {
+	text-align: center;
+}
+.categorias img{
+    width: 30%;
+}
+
+.menu li {
+	display:inline-block;
+    margin:0.5em;
+}
+
+.menu li a{
+	text-decoration: none;
+}
+
+.fondo-arbol img{
+	width: 100%;
+}
+
+.marca img{
+	width:40%;
 }
