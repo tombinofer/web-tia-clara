@@ -2,14 +2,28 @@
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
+/* Para agregar el icono de Facebook */
+@font-face {
+    font-family: 'facebook';
+    src:url('../fonts/icomoon.eot?yd8k2y');
+    src:url('--/fonts/icomoon.eot?#iefixyd8k2y') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?yd8k2y') format('woff'),
+        url('../fonts/icomoon.ttf?yd8k2y') format('truetype'),
+        url('../fonts/icomoon.svg?yd8k2y#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-	width:100%;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
-	background: #E5EA36;
-	font-family: "Lato", Helvetica, Arial, sans-serif;
+    background: #E5EA36;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width:100%;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,22 +31,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 aside {
-    border-top-width: 1px;
-    border-top-color: #ccc;
     border-radius: 4px;
+    border-top-color: #ccc;
+    border-top-width: 1px;
     padding: 0 1em;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 .categorias img{
+    display: inline-block;
+    overflow: hidden;
     width: 30%;
+}
+.categorias figcaption{
+    text-align: center;
+}
+
+/* Para agregar el icono de Facebook */
+.face::before{
+    font-family: 'facebook';
+    content: "\e600";
 }
 
 .menu li {
-	display:inline-block;
+    display:inline-block;
+    font-size: 20px;
     margin:0.5em;
+
+    /* Para agregar la sombra "3D" */
+    text-shadow: 
+        1px 1px 0px rgba(230,230,230,1),
+        1px 1px 0px rgba(200,200,200,1),
+        1px 1px 0px rgba(180,180,180,1),
+        1px 1px 0px rgba(160,160,160,1),
+        1px 1px 0px rgba(0,0,0,1),
+        1px 1px 0px rgba(0,0,0,0.5);
 }
 
 .menu li a{
@@ -41,8 +78,25 @@ footer {
 
 .fondo-arbol img{
 	width: 100%;
+    box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
 }
 
 .marca img{
-	width:40%;
+	width:50%;
+}
+/* Para agregar la Animacion */
+.zoomIt{
+display:inline-block!important;
+-webkit-transition:-webkit-transform 5s ease-out;
+-moz-transition:-moz-transform 1s ease-out;
+-o-transition:-o-transform 1s ease-out;
+-ms-transition:-ms-transform 1s ease-out;
+transition:transform 1s ease-out;
+}
+.zoomIt:hover{
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1)
 }
