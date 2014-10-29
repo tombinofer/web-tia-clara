@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="es">
-<meta charset="UTF-8">
 <head>
+    <meta charset="UTF-8">
     <title>Contacto</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
             <figure class="marca">
-                <img src="img/logo-tia-clara.png"/>
+                <img src="img/logo-tia-clara.png" alt="logo">
             </figure>
         <nav>
             <ul class="menu">
@@ -22,23 +22,23 @@
             </ul>
         </nav>
     </header>   
-    <form action="">
+    <form>
         <fieldset>
             <legend>Contactanos:</legend>
                 
             <label for="nombre">Nombre: </label>   
-            <input type="text" name="nombre" placeholder="Introduzca su Nombre" required>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduzca su Nombre" required>
             <br>
                  
-            <label for="email">Email: </label>
-            <input type="email" name="email" placeholder="E-mail" required>
+            <label for="email">  Email: </label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
             <br>
 
-            <label for="asunto">Asunto: </label>
-            <input type="text" name="asunto" placeholder="Introduzca un Asunto" required>
+            <label for="asunto">   Asunto: </label>
+            <input type="text" name="asunto"  id="asunto" placeholder="Introduzca un Asunto" required>
             <br>
             
-            <label for="mensaje">Mensaje: </label>
+            <label for="mensaje">  Mensaje: </label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje aquí" required></textarea> 
             <br>         
         </fieldset>
@@ -50,5 +50,6 @@
         <h4>Pedidos por encargo: 261 3 389 738 / clarabarraza6@gmail.com</h4>
         <h6>Encontranos en: Plaza de Chacras Domingos de 10:00 a 19:00 hs. Paeo Mitre Jueves, Viernes, Sábados y Domingos de 18:00 a 22:00 hs.</h6>
         </footer>
+    </form>
 </body>
 </html>
