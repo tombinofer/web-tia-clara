@@ -29,6 +29,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Lora";
 }
+header{
+    background: white;
+}
 
 aside {
     border-radius: 4px;
@@ -41,11 +44,13 @@ footer {
     text-align: center;
     margin: 0px;
     padding: 0px;
+    background: white;
 }
 .categorias img{
     display: inline-block;
     overflow: hidden;
     width: 30%;
+
 }
 .categorias figcaption{
     text-align: center;
@@ -55,6 +60,7 @@ footer {
 .face::before{
     font-family: 'facebook';
     content: "\e600";
+    color: green;
 }
 
 .menu li {
@@ -78,7 +84,6 @@ footer {
 
 .fondo-arbol img{
 	width: 100%;
-    box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
 }
 
 .marca img{
