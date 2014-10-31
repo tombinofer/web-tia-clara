@@ -1,43 +1,63 @@
-
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 /* Para agregar el icono de Facebook */
 @font-face {
-    font-family: 'facebook';
-    src:url('../fonts/icomoon.eot?yd8k2y');
-    src:url('--/fonts/icomoon.eot?#iefixyd8k2y') format('embedded-opentype'),
-        url('../fonts/icomoon.woff?yd8k2y') format('woff'),
-        url('../fonts/icomoon.ttf?yd8k2y') format('truetype'),
-        url('../fonts/icomoon.svg?yd8k2y#icomoon') format('svg');
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?bixkth');
+    src:url('fonts/icomoon.eot?#iefixbixkth') format('embedded-opentype'),
+        url('fonts/icomoon.woff?bixkth') format('woff'),
+        url('fonts/icomoon.ttf?bixkth') format('truetype'),
+        url('fonts/icomoon.svg?bixkth#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+/* Para agregar el icono de Menu */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+/*  colores del back  #bab03e    #c7ba56*/
 body {
-    background: #E5EA36;
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    background: #bab03e;
+    font-family: "Lato", Helvetica, Arial, sans-serif;  
     width:100%;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Lora";
+    font-family: "Lora";
 }
 header{
     background: white;
+    overflow: hidden;
+    width: 100%;
+}
+header nav{
+    width: 100%;
+    margin: 20px auto;
+    background: #FFFFFF;
+
+}
+header nav ul{
+    overflow:hidden;
+    list-style: none;
 }
 
+
 aside {
-    border-radius: 4px;
-    border-top-color: #ccc;
-    border-top-width: 1px;
-    padding: 0 1em;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -45,11 +65,14 @@ footer {
     margin: 0px;
     padding: 0px;
     background: white;
-}
+    overflow: hidden;
+}    
+
 .categorias img{
     display: inline-block;
     overflow: hidden;
-    width: 30%;
+    width: 25%;
+    min-width: 190px;
 
 }
 .categorias figcaption{
@@ -57,16 +80,18 @@ footer {
 }
 
 /* Para agregar el icono de Facebook */
-.face::before{
-    font-family: 'facebook';
+.icon-facebook::before {
     content: "\e600";
-    color: green;
+    font-family: 'icomoon';
 }
 
 .menu li {
     display:inline-block;
     font-size: 20px;
-    margin:0.5em;
+    position: relative;
+    margin: 1.5em 0 0.5em 1em;
+    padding: 0.5em;
+    float: left;
 
     /* Para agregar la sombra "3D" */
     text-shadow: 
@@ -79,16 +104,52 @@ footer {
 }
 
 .menu li a{
-	text-decoration: none;
+    text-decoration: none;
+    color: #bab03e;
+    padding: 2px;
+    display: block;
+
+}
+
+.menu li a:hover{
+    color: #000000; 
+}
+
+.menu-bar{
+    display: none;
+
+}
+
+.icon-list2::before{
+    content: "\e601";
+    font-family: 'icomoon';
+}
+/* --------------- Home ---------------------------------------------------!!!!!!!*/
+
+.fondo-arbol{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .fondo-arbol img{
-	width: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .marca img{
-	width:50%;
+    width:20%;
+    float: left;
+    margin: 1%;
+    position: relative;
+    min-width: 150px;
 }
+
+.sello img{
+    position: relative;
+    margin: 6em 2em 7em 67em;
+}
+
 /* Para agregar la Animacion */
 .zoomIt{
 display:inline-block!important;
@@ -97,6 +158,8 @@ display:inline-block!important;
 -o-transition:-o-transform 1s ease-out;
 -ms-transition:-ms-transform 1s ease-out;
 transition:transform 1s ease-out;
+margin: 2em 2em 2em 4em;
+position: relative;
 }
 .zoomIt:hover{
 -moz-transform: scale(1.1);
@@ -104,4 +167,85 @@ transition:transform 1s ease-out;
 -o-transform: scale(1.1);
 -ms-transform: scale(1.1);
 transform: scale(1.1)
+}
+
+@media screen and (max-width: 800px) {
+  
+  header nav{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: -100%;
+  }
+
+.categorias img{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+.marca img{
+    width:100%;
+    float: left;
+    margin: 1%;
+    min-width: 150px;
+ }
+.menu-bar{
+    display: block;
+    width: 100%;
+
+ }
+.menu-bar span{
+    float: right;
+    font-size: 300%;
+    color: #bab03e;
+    margin: 0em 0em 0.2em 0em;
+ }
+
+.menu-bar .bt-menu{
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    
+ }
+
+.menu li {
+    display:block;
+    float: none;
+    margin: 0em 1.5em 0em 0em;
+   }
+ 
+.fondo-arbol img{
+    width: 100%;
+    position: static;
+}
+
+
+}
+
+/* --------------- Nosotros -------------------------------------!!!!!!!*/
+/* nth-of-type(odd) - impar      even - par*/
+.fondo-nosotros{
+    padding: 0;
+    margin: 0;
+}
+.fondo-nosotros img{
+    width: 100%;
+}
+
+.historia h2{
+    margin: 0em 0.5em 0.5em 0.6em;
+    padding: 0.5em 1em 0em 2em;
+}
+.historia >  p {
+    margin: 0em 2em 0em 2em;
+    padding: 0.5em 1em 0em 2em;
+}
+
+.historia h3{
+    margin: 2em 2em 2em 2em;
+    padding: 0.5em 1em 0em 2em;
 }
