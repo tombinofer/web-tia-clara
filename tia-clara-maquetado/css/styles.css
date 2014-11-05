@@ -45,6 +45,7 @@ header{
     -webkit-box-sizing: border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
+    /*para que era esto? estefi*/
 }
 header nav{
     width: 100%;
@@ -80,7 +81,9 @@ footer {
     display: inline-block;
     overflow: hidden;
     width: 25%;
+    /*width tb cambia tamaños de los frascos*/
     min-width: 190px;
+     /*mind -width tamaño de los frascos*/
 
 }
 .categorias figcaption{
@@ -93,11 +96,16 @@ footer {
     font-family: 'icomoon';
 }
 
+.menu {
+    margin-right: 65px;
+    /*con esto alinie(?) el menu con los frascos*/
+}
+
 .menu li {
     display:inline-block;
-    font-size: 20px;
+    font-size: 16px; /* antes 20px */
     position: relative;
-    margin: 0em 2em 0.5em 0em;
+    margin: 0em 2em 1em 0em;
     padding: 0.1em;
     float: left;
 
@@ -109,6 +117,9 @@ footer {
         1px 1px 0px rgba(160,160,160,1),
         1px 1px 0px rgba(0,0,0,1),
         1px 1px 0px rgba(0,0,0,0.5);
+
+        
+
         */
 }
 
@@ -146,16 +157,34 @@ footer {
     position: absolute;
 }
 
+/* --------------- nuevo, estefi, guarda ------*/
+.guarda {
+    width: 100%;
+    padding: 0px;
+    margin: 0em 2em 10em 0em;
+}
+
+.guarda img{
+    width: 100%;
+    position: absolute;
+}
+/* --------------- hasta aca ------*/
+
 .marca img{
-    width:20%;
+    width:15%;
     float: left;
     position: relative;
     min-width: 150px;
+    /* width: 20% (medidas originales) tamaño de la marca!!!!*/
+    margin-left: 65px;
+    /*agregue un margin left para alinear el logo con el frasco */
+
 }
 
 .sello img{
     position: relative;
-    margin: 6em 2em 7em 67em;
+    margin: 4em 0em 0em 60em;
+    /* margin: 6em 2em 7em 67em (medidas originales) se maneja la posicion de los frascos sobre la imagen de fondo*/
 }
 
 /* Para agregar la Animacion */
@@ -200,6 +229,10 @@ transform: scale(1.1)
     float: left;
     margin: 1%;
     min-width: 150px;
+    /*  width:70%;
+    float: left;
+    margin: 1%;
+    min-width: 150px; (medidas originales) ? */
  }
 .menu-bar{
     display: block;
@@ -242,14 +275,17 @@ transform: scale(1.1)
     padding: 0;
     margin: 0;
 }
+
 .fondo-nosotros img{
     width: 100%;
 }
+
 
 .historia h2{
     margin: 0em 0.5em 0.5em 0.6em;
     padding: 0.5em 1em 0em 2em;
 }
+
 .historia >  p {
     margin: 0em 2em 0em 2em;
     padding: 0.5em 1em 0em 2em;
