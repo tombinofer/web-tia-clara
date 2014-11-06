@@ -10,6 +10,7 @@
 </head>
 <body>
 	<header>
+			<!-- Pasar figure a div -->
 			<figure class="marca">
 				<a href="index.html"><img src="img/logo-tia-clara.png" alt="logo tia clara"></a> 
 			</figure>
@@ -28,23 +29,40 @@
 			</ul>
 		</nav>
 	</header>
-	<figure class="fondo-arbol">
-		<img src="img/arbolito-1600x450.jpg" alt="fondo del home">
-	</figure>
-	<aside>
-		<figure class="sello">
-			<img src="img/sello-producto-artesanal-130x130.png" alt="sello">
+	<div class="wrapper">
+		<div class="banner">
+			<img src="img/arbolito-1600x450.jpg" alt="fondo del home">
+			<div class="sello">
+				<img src="img/sello-producto-artesanal-130x130.png" alt="sello">
+			</div>
+		</div>
+		<!-- No hace falta este figure -->
+		<div class="home-products">
+			<div class="product-image">
+				<img class="zoomIt" src="img/dulce-de-tomate-home-al-corte-home.png" alt="dulces">
+				<span class="product-image-description">Dulce</span>
+			</div>	
+			<div class="product-image">
+				<img class="zoomIt" src="img/mermelada-de-limón-home-al-corte-home.png" alt="mermeladas">
+				<span class="product-image-description">Dulce</span>
+			</div>	
+			<div class="product-image">
+				<img class="zoomIt" src="img/jalea-de-higo-home-al-corte-home.png" alt="jaleas">
+				<span class="product-image-description">Dulce</span>
+			</div>	
+			<div>Dulces,Mermeladas y Jaleas - Probalos!</div>
+		</div>
+        <!-- Poner esta imagen como fondo del aside
+			aside {
+				background: url(img/arbolito-1600x450.jpg) repeat-x bottom left;
+		 	}
+		-->
+		<!--
+		<figure class="guarda">
+			<img src="img/guarda-1600x169.png" alt="guarda home">
 		</figure>
-		<figure class="categorias">
-			<img class="zoomIt" src="img/dulce-de-tomate-home-al-corte-home.png" alt="dulces">	
-			<img class="zoomIt" src="img/mermelada-de-limón-home-al-corte-home.png" alt="mermeladas">
-			<img class="zoomIt" src="img/jalea-de-higo-home-al-corte-home.png" alt="jaleas">
-			<figcaption>Dulces,Mermeladas y Jaleas - Probalos!</figcaption>
-		</figure>
-        <figure class="guarda">
-		<img src="img/guarda-1600x169.png" alt="guarda home">
-	</figure>
-	</aside>
+		-->
+	</div>
 	<footer>
 		<h4>Pedidos por encargo: 261 3 389 738 / clarabarraza6@gmail.com</h4>
 		<h6>Encontranos en: Plaza de Chacras Domingos de 10:00 a 19:00 hs. Paseo Mitre Jueves, Viernes, Sábados y Domingos de 18:00 a 22:00 hs.</h6>

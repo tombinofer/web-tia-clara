@@ -77,19 +77,6 @@ footer {
     overflow: hidden;
 }    
 
-.categorias img{
-    display: inline-block;
-    overflow: hidden;
-    width: 25%;
-    /*width tb cambia tamaños de los frascos*/
-    min-width: 190px;
-     /*mind -width tamaño de los frascos*/
-
-}
-.categorias figcaption{
-    text-align: center;
-}
-
 /* Para agregar el icono de Facebook */
 .icon-facebook::before {
     content: "\e600";
@@ -164,13 +151,13 @@ footer {
     margin: 0em 2em 10em 0em;
 }
 
-.guarda img{
+.guarda img {
     width: 100%;
     position: absolute;
 }
 /* --------------- hasta aca ------*/
 
-.marca img{
+.marca img {
     width:15%;
     float: left;
     position: relative;
@@ -187,6 +174,21 @@ footer {
     /* margin: 6em 2em 7em 67em (medidas originales) se maneja la posicion de los frascos sobre la imagen de fondo*/
 }
 
+.product-image {
+    display: inline-block;
+    width: 25%;
+    margin: 2em 2em 2em 4em;
+}
+.product-image img {
+    width: 100%;
+}
+.product-image-description {
+    display: block;
+    margin-top: -2em;
+    text-align: center;
+}
+
+
 /* Para agregar la Animacion */
 .zoomIt{
 display:inline-block!important;
@@ -195,7 +197,6 @@ display:inline-block!important;
 -o-transition:-o-transform 1s ease-out;
 -ms-transition:-ms-transform 1s ease-out;
 transition:transform 1s ease-out;
-margin: 2em 2em 2em 4em;
 position: relative;
 }
 .zoomIt:hover{
@@ -214,14 +215,6 @@ transform: scale(1.1)
     margin: 0;
     position: fixed;
     left: -100%;
-  }
-
-.categorias img{
-    display: inline-block;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
   
 .marca img{
