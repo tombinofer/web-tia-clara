@@ -64,6 +64,20 @@
 				<p>Acompañalas con carnes rojas o tostadas de pan integral</p>
 			</li>
 		</ul>
+
+    {% if lista_de_tipos %}
+    	<ul>
+    		{% for tipo in lista_de_tipos %}
+        		<li>
+        			<h2>{{ tipo.nombre }}</h2>
+					{{productos.nombre}}
+        		</li>
+    		{% endfor %}
+    	</ul>
+	{% else %}
+    	<p>No hay tipos disponibles.</p>
+	{% endif %}
+
 	</aside>
 	<footer>
 		<h4>Pedidos por encargo: 261 3 389 738 | clarabarraza6@gmail.com</h4>
