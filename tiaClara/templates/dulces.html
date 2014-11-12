@@ -70,7 +70,13 @@
     		{% for tipo in lista_de_tipos %}
         		<li>
         			<h2>{{ tipo.nombre }}</h2>
-					{{productos.nombre}}
+					<ul>
+         				{% for prod in productos %}
+         				<li>{{ prod.titulo }}</li>
+        				{% empty %}
+        				<li>No hay productos registradas aún</li>
+         				{% endfor %}
+    				</ul>
         		</li>
     		{% endfor %}
     	</ul>
