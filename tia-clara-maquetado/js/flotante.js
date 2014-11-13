@@ -5,7 +5,10 @@ $( document ).ready(function(){
     $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     if (scroll > 100) {
-        $('.nav .flotante').show();
+        $('.nav .flotante').fadeIn();
+        $('.nav .flotante li a').css("color","black");
+        $('.nav .flotante li a:hover').css("color","#bab03e");
+
     } else {
         $('.nav .flotante').hide();
     }
