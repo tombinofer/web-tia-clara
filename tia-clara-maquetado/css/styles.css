@@ -131,6 +131,20 @@ footer {
     content: "\e601";
     font-family: 'icomoon';
 }
+/* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------- Home ---------------------------------------------------!!!!!!!*/
 
 .fondo-arbol{
@@ -143,6 +157,8 @@ footer {
     width: 100%;
     position: absolute;
 }
+
+
 
 /* --------------- nuevo, estefi, guarda ------*/
 .guarda {
@@ -253,12 +269,6 @@ transform: scale(1.1)
     padding: 15px;
    }
  
-.fondo-arbol img{
-    width: 100%;
-    position: static;
-}
-
-
 }
 
 
