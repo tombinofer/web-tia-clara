@@ -291,7 +291,7 @@ transform: scale(1.1)
 /* --------------- nav flotante -------------!!!!!!!*/
 nav .flotante {
     top:0;
-    background: white;
+    background:rgba(255,255,255,0.7); 
     position: fixed;
     margin:0px;
     width: 100%;

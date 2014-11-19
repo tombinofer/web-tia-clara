@@ -1,0 +1,66 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-with, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Web Tía Clara es un sitio donde encontrarás los dulces, mermeladas y jaleas deseadas para tu alimentación. " />
+    <meta name="keywords" content="dulces, mendoza, mermeladas, jaleas, tiaClara, MERMELADAS, JALEAS, MENDOZA, DULCES, MILONGA, ARGENTINA, PRODUCTOS, productos, TIACLARA" />
+    <title>{% block titulo %} {% endblock %} - Tía Clara dulces artesanales </title>
+    <link rel="shortcut icon" href="/img/sello-producto-artesanal-130x130.png">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="/js/demo.js"></script>    
+</head>
+<body>
+    <header>
+            <div class="marca">
+                <a href="index.html"><img src="{% static 'img/logo-tia-clara.png' %}" alt="logo tia clara"></a> 
+            </div>
+            <div class="menu-bar">
+                <a href="#" class="bt-menu"><span class="icon-list2"></span> </a>
+            </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/mermeladas">Mermeladas</a></li>
+                <li><a href="/dulces">Dulces</a></li>
+                <li><a href="/jaleas">Jaleas</a></li>
+                <li><a href="/otros">Otros</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="https://www.facebook.com/pages/T%C3%ADa-Clara-dulces-artesanales/1473508252899702" target="_blank" class="icon-facebook"></a></li>
+            </ul>
+        </nav>
+    </header>
+ {% block contenido %} {% endblock %}  
+    <footer>
+           <div class="footer">
+            <div class="contacto">
+                <img class="icono-contacto" src="img/icono-contacto.png" alt="contacto">
+                <span>261153389738 | clara_barraza@hotmail.com <br>
+                    Luzuriaga 415 | Dorrego - Guaymallén - Mendoza.</span>
+            </div>
+        <div class="direccion">
+                <img class="icono-direccion" src="img/icono-direccion.png" alt="direccion">
+                <span>Plaza de Chacras | Chacras de Coria <br>
+                    Luján de Cuyo | Mendoza <br>
+                    Domingos de 10.00 a 19.00 hs.</span>
+        </div>
+        <div class="facebook">
+            <img class="icono-facebook" src="img/icono-facebook.png" alt="icono facebook">
+                <span class="seguinos">¡Seguinos!</span>
+                <span>/Tía-Clara-dulces-artesanales</span>
+        </div>
+        <div class="copyright">
+            <span>copyright-powered by #</span>
+            <span>todos los derechos reservados</span>
+        </div>
+        <div class="municipalidad">
+            <img class="muni" src="ciudad-de-mendoza" alt="ciudad de mendoza">
+        </div>
+    </div>
+    </footer>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

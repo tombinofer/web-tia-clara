@@ -5,7 +5,9 @@ $( document ).ready(function(){
     $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     if (scroll > 100) {
-        $('.nav .flotante').show();
+        $('.nav .flotante').fadeIn();
+        $('.nav .flotante li a').css("color","black");
+
     } else {
         $('.nav .flotante').hide();
     }

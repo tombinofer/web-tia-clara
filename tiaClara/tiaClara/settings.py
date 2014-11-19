@@ -82,17 +82,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, "templates")]
 
 STATIC_URL = '/static/'
+INTERNAL_IPS = ("127.0.0.1",)
+MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "carga")
 
-MEDIA_URL = 'http://127.0.0.1:8000/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, "templates"),
-    )
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-    )
+#configuraciones para enviar mensajes usando gmail
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'webtiaclara@gmail.com'
+EMAIL_HOST_PASSWORD = 'webtiaclara1234'
+EMAIL_PORT = 587

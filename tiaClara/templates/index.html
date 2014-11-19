@@ -1,73 +1,45 @@
-<!doctype html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="with=device-with, initial-scale=1, maximum-scale=1">
-	<title>Web Tia Clara</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+{% extends 'base.html' %}
+{% block titulo %} Inicio {% endblock %}
 
-</head>
-<body>
-	<header>
-			<!-- Pasar figure a div -->
-			<figure class="marca">
-				<a href="index.html"><img src="img/logo-tia-clara.png" alt="logo tia clara"></a> 
-			</figure>
-			<div class="menu-bar">
-				<a href="#" class="bt-menu"><span class="icon-list2"></span> </a>
-			</div>
-		<nav>
-			<ul class="menu">
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="mermeladas.html">Mermeladas</a></li>
-				<li><a href="dulces.html">Dulces</a></li>
-				<li><a href="jaleas.html">Jaleas</a></li>
-				<li><a href="otros.html">Otros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="https://www.facebook.com/pages/T%C3%ADa-Clara-dulces-artesanales/1473508252899702" target="_blank" class="icon-facebook"></a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="wrapper">
-		<div class="banner">
-			<img src="img/arbolito-1600x450.jpg" alt="fondo del home">
-			<div class="sello">
-				<img src="img/sello-producto-artesanal-130x130.png" alt="sello">
-			</div>
+{% block contenido %}
+
+<div class="wrapper">
+	<div class="banner">
+		<img src="/img/arbolito-1600x450.jpg" alt="fondo del home">
+		<div class="sello">
+			<img src="img/sello-producto-artesanal-130x130.png" alt="sello">
 		</div>
-		<!-- No hace falta este figure -->
-		<div class="home-products">
-			<div class="product-image">
-				<img class="zoomIt" src="img/dulce-de-tomate-home-al-corte-home.png" alt="dulces">
-				<span class="product-image-description">Dulce</span>
-			</div>	
-			<div class="product-image">
-				<img class="zoomIt" src="img/mermelada-de-limón-home-al-corte-home.png" alt="mermeladas">
-				<span class="product-image-description">Dulce</span>
-			</div>	
-			<div class="product-image">
-				<img class="zoomIt" src="img/jalea-de-higo-home-al-corte-home.png" alt="jaleas">
-				<span class="product-image-description">Dulce</span>
-			</div>	
-			<div>Dulces,Mermeladas y Jaleas - Probalos!</div>
-		</div>
-        <!-- Poner esta imagen como fondo del aside
-			aside {
-				background: url(img/arbolito-1600x450.jpg) repeat-x bottom left;
-		 	}
-		-->
-		<!--
-		<figure class="guarda">
-			<img src="img/guarda-1600x169.png" alt="guarda home">
-		</figure>
-		-->
 	</div>
-	<footer>
-		<h4>Pedidos por encargo: 261 3 389 738 / clarabarraza6@gmail.com</h4>
-		<h6>Encontranos en: Plaza de Chacras Domingos de 10:00 a 19:00 hs. Paseo Mitre Jueves, Viernes, Sábados y Domingos de 18:00 a 22:00 hs.</h6>
-	</footer>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/menu.js"></script>
-</body>
-</html>
+	<div class="home-products">
+		<div class="product-image">
+			<img class="zoomIt" src="/img/dulce-de-tomate-home-al-corte-home.png" alt="dulces">
+			<span class="product-image-description">¡Sabor artesanal para tu cocina!</span>
+			<p>Dulces en pan y en almíbar se pueden convertir en exquisitos postres de una cena o almuerzo innolvidable. Descubrilos....</p>
+		</div>	
+		<div class="product-image">
+			<img class="zoomIt" src="/img/mermelada-home-al-corte.png" alt="mermeladas">
+			<span class="product-image-description">Tradición en tu desayuno.</span>
+			<p>Comenzá el día con alguna de nuestras mermeladas clásicas, regionales o gourmet. Sabor en tu mesa.Descubrilos....</p>
+		</div>	
+		<div class="product-image">
+			<img class="zoomIt" src="/img/jalea-de-higo-home-al-corte-home.png" alt="jaleas">
+			<span class="product-image-description">Textura y brillo.</span>
+			<p>Nuestras jaleas son ideales para rellenar, cubrir y decorar diversas preparaciones. Disponibles en sabores tradicionales y exóticos.Descubrilos....</p>	
+		<div class="sello"></div>	
+		</div>
+		<div class="guarda">
+			<img src="/img/guarda-1600x169.png" alt="guarda/back">
+		</div>
+	</div>
+       <!-- Poner esta imagen como fondo del aside
+		aside {
+			background: url(img/arbolito-1600x450.jpg) repeat-x bottom left;
+	 	}
+	-->
+	<!--
+	<figure class="guarda">
+		<img src="img/guarda-1600x169.png" alt="guarda home">
+	</figure>
+	-->
+</div>
+{% endblock %}
