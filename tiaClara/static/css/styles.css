@@ -131,6 +131,20 @@ footer {
     content: "\e601";
     font-family: 'icomoon';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------- Home ---------------------------------------------------!!!!!!!*/
 
 .fondo-arbol{
@@ -143,6 +157,8 @@ footer {
     width: 100%;
     position: absolute;
 }
+
+
 
 /* --------------- nuevo, estefi, guarda ------*/
 .guarda {
@@ -167,10 +183,11 @@ footer {
     /*agregue un margin left para alinear el logo con el frasco */
 
 }
-
+.sello{
+    width: 10%;
+}
 .sello img{
-    position: relative;
-    margin: 4em 0em 0em 60em;
+
     /* margin: 6em 2em 7em 67em (medidas originales) se maneja la posicion de los frascos sobre la imagen de fondo*/
 }
 
@@ -206,7 +223,7 @@ position: relative;
 -ms-transform: scale(1.1);
 transform: scale(1.1)
 }
-
+/* ---------------    responsivee      --------------------------------------------------!!!!!!!*/
 @media screen and (max-width: 1076px) {
   
   header nav{
@@ -253,13 +270,10 @@ transform: scale(1.1)
     padding: 15px;
    }
  
-.fondo-arbol img{
-    width: 100%;
-    position: static;
 }
+/* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
 
 
-}
 
 
 /* --------------- Nosotros -------------------------------------!!!!!!!*/
@@ -321,6 +335,39 @@ nav .flotante {
     width:40%;
     float: left;
 }
+
+/* --------------- Dulces - Mermeladas- jaleas- otros - contacto !!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+dd, dt,dl{
+    margin:0;
+    padding: 0;
+}
+.banner img{
+    width: 100%;
+}
+.productos{
+    margin:0;
+    padding: 0;
+}
+.productos li{
+    list-style: none;
+}
+.banner-productos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.banner-productos img{
+    width: 100%;
+}
+
 /* --------------- Contacto ---------------------!!!!!!!*/
 
 .form-contacts-submit{

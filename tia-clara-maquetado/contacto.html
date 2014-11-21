@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-            <figure class="marca">
+            <div class="marca">
                 <a href="index.html"><img src="img/logo-tia-clara.png" alt="logo tia clara"></a> 
-            </figure>
+            </div>
             <div class="menu-bar">
                 <a href="#" class="bt-menu"><span class="icon-list2"></span> </a>
             </div>
@@ -33,64 +33,86 @@
             <div class="sello">
                 <img src="img/sello-producto-artesanal-130x130.png" alt="sello">
             </div> 
-    <form class="form-contacts-submit" id="formContact">
-        <div class="error"> 
-            <span></span>
         </div>
-        <fieldset>
-            <legend>Contactanos:</legend>
-                
-            <label for="nombre">Nombre: </label>   
-            <input type="text" name="nombre" id="nombre" placeholder="Introduzca su Nombre" minlength="3" required>
-            <br>
-                 
-            <label for="email">  Email: </label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required>
-            <br>
+        <form class="form-contacts-submit" id="formContact">
+            <div class="error"> 
+                <span></span>
+            </div>
+            <fieldset>
+                <legend>Contactanos:</legend>
+                    
+                <label for="nombre">Nombre: </label>   
+                <input type="text" name="nombre" id="nombre" placeholder="Introduzca su Nombre" minlength="3" required>
+                <br>
+                     
+                <label for="email">  Email: </label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <br>
 
-            <label for="asunto">   Asunto: </label>
-            <input type="text" name="asunto"  id="asunto" placeholder="Introduzca un Asunto" required>
-            <br>
-            
-            <label for="mensaje">  Mensaje: </label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje aquí" required></textarea> 
-            <br>         
-        </fieldset>
-        <fieldset>
-            <input class="boton" type="submit" value="Enviar"/>
-            <input type="reset" value="Cancelar">
-        </fieldset>
-     
-    </form>
-    <footer>
+                <label for="asunto">   Asunto: </label>
+                <input type="text" name="asunto"  id="asunto" placeholder="Introduzca un Asunto" required>
+                <br>
+                
+                <label for="mensaje">  Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje aquí" required></textarea> 
+                <br>         
+            </fieldset>
+            <fieldset>
+                <input class="boton" type="submit" value="Enviar"/>
+                <input type="reset" value="Cancelar">
+            </fieldset>
+         
+        </form>
+        <div class="contacto-footer">
+            <div class="conjunto-de-producto">
+                <img src="img/contacto-productos-en-conjunto.png" alt="productos">
+            </div> 
+            <div class="texto">
+                <h3>Podés encontrar nuestros productos aquí:</h3>
+                <span>Plaza de Chacras | Chacras de Coria 
+                    Luján de Cuyo | Mendoza
+                Domingos de 10.00 a 19.00 hs.</span>
+            </div>
+            <div class="texto2">
+                <h3>O pedirlos por encargo:</h3>
+                <span>261153389738 | clara_barraza@hotmail.com
+                Luzuriaga 415 | Dorrego - Guaymallén - Mza.</span>
+            </div>
+            <div class="guarda">
+                <img src="img/guarda-tia-clara.png" alt="guarda">
+            </div>
+        </div> 
+    </div>
+   <footer>
         <div class="footer">
             <div class="contacto">
                 <img class="icono-contacto" src="img/icono-contacto.png" alt="contacto">
                 <span>261153389738 | clara_barraza@hotmail.com <br>
                     Luzuriaga 415 | Dorrego - Guaymallén - Mendoza.</span>
             </div>
-        <div class="direccion">
-                <img class="icono-direccion" src="img/icono-direccion.png" alt="direccion">
-                <span>Plaza de Chacras | Chacras de Coria <br>
-                    Luján de Cuyo | Mendoza <br>
-                    Domingos de 10.00 a 19.00 hs.</span>
+            <div class="direccion">
+                    <img class="icono-direccion" src="img/icono-direccion.png" alt="direccion">
+                    <span>Plaza de Chacras | Chacras de Coria <br>
+                        Luján de Cuyo | Mendoza <br>
+                        Domingos de 10.00 a 19.00 hs.</span>
+            </div>
+            <div class="facebook">
+                <img class="icono-facebook" src="img/icono-facebook.png" alt="icono facebook">
+                    <span class="seguinos">¡Seguinos!</span>
+                    <span>/Tía-Clara-dulces-artesanales</span>
+            </div>
+            <div class="catalogo">
+                <img class="icono-catalogo" src="img/icono-catalogo.png" alt="icono catalogo">
+                <span class="seguinos">Descargá el listado de productos.</span>
+            </div>
+            <div class="copyright">
+                <span>copyright-powered by #</span>
+                <span>todos los derechos reservados</span>
+            </div>
         </div>
-        <div class="facebook">
-            <img class="icono-facebook" src="img/icono-facebook.png" alt="icono facebook">
-                <span class="seguinos">¡Seguinos!</span>
-                <span>/Tía-Clara-dulces-artesanales</span>
-        </div>
-        <div class="copyright">
-            <span>copyright-powered by #</span>
-            <span>todos los derechos reservados</span>
-        </div>
-        <div class="municipalidad">
-            <img class="muni" src="ciudad-de-mendoza" alt="ciudad de mendoza">
-        </div>
-    </div>
     </footer>
     <script src="js/jquery-1.11.1.min.js"></script>
-     <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/contacto.js"></script>
 </body>
