@@ -1,65 +1,40 @@
-<!doctype html>
-<html lang="es">
-<head>
-	<meta name="viewport" content="with=device-with, initial-scale=1, maximum-scale=1">
-	<meta charset="UTF-8">
-	<title>Dulces</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
-<header>
-			<figure class="marca">
-				<a href="index.html"><img src="img/logo-tia-clara.png" alt="logo tia clara"></a> 
-			</figure>
-			<div class="menu-bar">
-				<a href="#" class="bt-menu"><span class="icon-list2"></span> </a>
+{% extends 'base.html' %}
+{% block titulo %} Mermeladas {% endblock %}
+{% block contenido %}
+
+<div class="wrapper">
+		<div class="banner">
+			<img src="/img/mermelada-banner-jam-and-bread-1600x450.jpg" alt="fondo de mermeladas">
+			<div class="sello">
+				<img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
 			</div>
-		<nav>
-			<ul class="menu">
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="mermeladas.html">Mermeladas</a></li>
-				<li><a href="dulces.html">Dulces</a></li>
-				<li><a href="jaleas.html">Jaleas</a></li>
-				<li><a href="otros.html">Otros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="https://www.facebook.com/pages/T%C3%ADa-Clara-dulces-artesanales/1473508252899702" target="_blank" class="icon-facebook"></a></li>
-			</ul>
-		</nav>
-	</header>
-	<aside>
-		<h1>Mermeladas</h1>
-		<h2>Clásicas</h2>
-		<ul class="productos">
-			<li>#
-				<img src="img/arandanos-fondo-1600x400.png" alt="#">
-				<p>Acompañalas con carnes rojas o tostadas de pan integral</p>
-			</li>
-			<li>
-				<img src="#" alt="#">
-				<p>Acompañalas con carnes rojas o tostadas de pan integral</p>
-			</li>
-		</ul>
-		<h2>Regionales</h2>
-		<ul class="productos">
-			<li>
-				<img src="#" alt="#">
-				<p>Acompañalas con carnes rojas o tostadas de pan integral</p>
-			</li>
-		</ul>
-		<h2>Gourmet</h2>
-		<ul class="productos">
-			<li>
-				<img src="#" alt="#">
-				<p>Acompañalas con carnes rojas o tostadas de pan integral</p>
-			</li>
-		</ul>
-	</aside>
-	<footer>
-		<h4>Pedidos por encargo: 261 3 389 738 / clarabarraza6@gmail.com</h4>
-		<h6>Encontranos en: Plaza de Chacras Domingos de 10:00 a 19:00 hs. Paeo Mitre Jueves, Viernes, Sábados y Domingos de 18:00 a 22:00 hs.</h6>
-	</footer>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/menu.js"></script>
-</body>
-</html>
+		</div>
+		<div id="acordion">
+
+				<div class="franja-tipos">
+					<h2>{{ tipo.nombre }}</h2>
+				</div>
+				<ul class="productos">
+					{% for mermelada in mermeladas %}
+					<li>
+						<div class="banner-productos">
+							<img src="{{ MEDIA_URL }}imgProducto/{{mermelada.fk_url}}" alt="banner de frutillas">
+						</div>
+						<div class="franja-blanca">
+						<h3>{{ mermelada.nombre }}</h3>
+						</div>
+						<img class="frascos" src="{{ MEDIA_URL }}imgProducto/{{mermelada.fk_url}}" alt="FRUTILLAS">
+						<span class="sugerencias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempor augue .</span>
+						<div class="consulta">
+							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
+						</div>
+						<div class="guarda">
+							<img src="/img/guarda-tia-clara.png" alt="guarda/back">
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+		</div>
+</div>
+
+{% endblock %}

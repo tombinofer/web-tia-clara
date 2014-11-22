@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404, render
 from django.views import generic
 from productos.models import Receta, Producto, Tipo, Categoria, ImagenProducto
+from contenidos.models import Pagina, Imagen
 from django.conf import settings
 from productos.forms import ContactoForm
 from django.core.mail import EmailMessage
@@ -14,8 +15,16 @@ from django.template import RequestContext
 #    context = {'lista_de_tipos': lista_de_tipos, 'productos':productos}
 #    return render_to_response('dulces.html',context)
 
-def index(request):
-    return HttpResponse(u"Hola mundo. Estás en el index de encuestas.")
+def indexMermeladas(request):
+    mermeladas = Producto.objects.all()
+    return render_to_response("mermeladas.html",{"mermeladas":mermeladas}, context_instance=RequestContext(request))
+
+
+def lista_paginas(request):
+    paginas = Pagina.objects.all()
+    return render_to_response("contacto.html",{"paginas":paginas}, context_instance=RequestContext(request))
+
+
 
 def contacto(request):
     if request.method=="POST":

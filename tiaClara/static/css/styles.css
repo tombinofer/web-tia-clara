@@ -37,6 +37,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lora";
+    color:#453B07
 }
 header{
     background: white;
@@ -85,7 +86,6 @@ footer {
 
 .menu {
     margin-right: 65px;
-    /*con esto alinie(?) el menu con los frascos*/
 }
 
 .menu li {
@@ -133,18 +133,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------- Home ---------------------------------------------------!!!!!!!*/
 
 .fondo-arbol{
@@ -160,11 +148,10 @@ footer {
 
 
 
-/* --------------- nuevo, estefi, guarda ------*/
 .guarda {
     width: 100%;
     padding: 0px;
-    margin: 0em 2em 10em 0em;
+    margin: 0em 2em 4.6em 0em;
 }
 
 .guarda img {
@@ -187,8 +174,11 @@ footer {
     width: 10%;
 }
 .sello img{
-
-    /* margin: 6em 2em 7em 67em (medidas originales) se maneja la posicion de los frascos sobre la imagen de fondo*/
+    float: left;
+    position: relative;
+    margin-top: -350px;
+    margin-left: 1100px;
+    z-index: 2;
 }
 
 .product-image {
@@ -204,7 +194,23 @@ footer {
     margin-top: -2em;
     text-align: center;
 }
+.consulta img{
+    width: 10%;
+}
+.franja-tipos{
+    background: #534709;
+    margin-top: -3px;
+    position: relative;
+    height: 3em;
+}
 
+.franja-tipos h2{
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
+}
 
 /* Para agregar la Animacion */
 .zoomIt{
@@ -351,6 +357,7 @@ dd, dt,dl{
 }
 .banner img{
     width: 100%;
+    z-index: 1;
 }
 .productos{
     margin:0;
@@ -359,6 +366,22 @@ dd, dt,dl{
 .productos li{
     list-style: none;
 }
+.frascos{
+    margin-top: -300px;
+    width: 40%;
+    z-index: 3;
+
+}
+.sugerencias{
+   
+
+}
+
+.consultas{
+
+
+}
+
 .banner-productos{
     width: 100%;
     margin: 0;
@@ -368,6 +391,25 @@ dd, dt,dl{
     width: 100%;
 }
 
+.franja-blanca{
+    background: #FFFFFF;
+    margin-top: -3px;
+    position: relative;
+    height: 3em;
+    z-index: 1;
+}
+
+.franja-blanca h3{
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
+}
+
+.productos {
+    display: inline-block;
+}
 /* --------------- Contacto ---------------------!!!!!!!*/
 
 .form-contacts-submit{
