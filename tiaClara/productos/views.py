@@ -2,7 +2,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404, render
 from django.views import generic
-from productos.models import Receta, Producto, Tipo, Categoria, ImagenProducto
+from productos.models import Receta, Producto, Tipo, Categoria
 from contenidos.models import Pagina, Imagen
 from django.conf import settings
 from productos.forms import ContactoForm
@@ -16,8 +16,8 @@ from django.template import RequestContext
 #    return render_to_response('dulces.html',context)
 
 def indexMermeladas(request):
-    mermeladas = Producto.objects.all()
-    return render_to_response("mermeladas.html",{"mermeladas":mermeladas}, context_instance=RequestContext(request))
+    categoria_mermelada = Categoria.objects.get(nombre="Mermeladas")
+    return render_to_response("mermeladas.html",{"mermeladas":categoria_mermelada.producto_set.all()}, context_instance=RequestContext(request))
 
 
 def lista_paginas(request):

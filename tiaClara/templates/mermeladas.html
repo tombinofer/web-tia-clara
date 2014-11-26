@@ -18,7 +18,7 @@
 					{% for mermelada in mermeladas %}
 					<li>
 						<div class="banner-productos">
-							<img src="{{ MEDIA_URL }}imgProducto/{{mermelada.fk_url}}" alt="banner de frutillas">
+							<img src="{{ mermelada.(variable_imagekit).url }}" alt="banner de frutillas">
 						</div>
 						<div class="franja-blanca">
 						<h3>{{ mermelada.nombre }}</h3>
