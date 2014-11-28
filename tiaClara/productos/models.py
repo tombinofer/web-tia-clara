@@ -41,7 +41,7 @@ class Producto(models.Model):
     imagen_producto = models.ImageField(upload_to = "imgProducto")
     imagen_producto_vista = ImageSpecField(source='imagen_producto',
                                       processors=[ResizeToFill(800, 800)],
-                                      format='JPEG',
+                                      format='PNG',
                                       options={'quality': 100})
     
    
