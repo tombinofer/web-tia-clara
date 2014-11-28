@@ -1,4 +1,4 @@
 web-tia-clara
 =============
 
-Dulces, Mermeladas y Jaleas, riquisimo
+Dulces, Mermeladas y Jaleas, delicioso
