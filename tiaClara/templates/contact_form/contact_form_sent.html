@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block titulo %}{% trans "Contacto Realizado" %}{% endblock %}
+{% block contenido %}
+    <section class="main style3">
+        <article id="contact-sent">
+                <strong>{% trans "Gracias!" %}</strong>
+                <p>{% trans "Su mensaje ha sido enviado exitosamente, le responderemos a la brevedad posible." %}</p>
+        </article>
+    </section>
+{% endblock %}

@@ -22,6 +22,8 @@ class ProductoAdmin(admin.ModelAdmin):
         (None,               {'fields': ['tipos']}),
         (u'Categorias', {'fields': ['productos_categorias']}),
         (None, {'fields': ['productos_recetas']}),
+        (u'Imágen Banner', {'fields': ['imagen_banner']}),
+        (u'Imágen Producto', {'fields': ['imagen_producto']}),
     ]
 
     filter_horizontal = ['productos_categorias','productos_recetas'] #para dar un filtro horizontal para mostrar relaciones ManyToManyField                            

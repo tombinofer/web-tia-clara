@@ -27,6 +27,11 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ADMINS = (
+    (u'Fernando Orozco', 'fernandogorozco@gmail.com'),
+)
+
+MANAGERS = ADMINS
 
 # Application definition
 
@@ -39,6 +44,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'productos',
     'contenidos',
+    'imagekit',
+    'contact_form',
+    'ckeditor',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -80,18 +88,52 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
+#Para la llamada de los static y media!
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, "templates")]
 
 STATIC_URL = '/static/'
 INTERNAL_IPS = ("127.0.0.1",)
 MEDIA_URL = '/media/'
 
-
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+###################################
 
+#Para la implementación de ckeditor
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_IMAGE_BACKEND = "pillow"
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': [
+            ['Undo', 'Redo',
+             '-', 'Bold', 'Italic', 'Underline',
+             '-', 'Link', 'Unlink', 'Anchor',
+             '-', 'Styles', 'Format',
+             '-', 'TextColor', 'BGColor',
+             '-', 'SpellChecker', 'Scayt',
+             '-', 'Maximize',
+             ],
+            ['HorizontalRule',
+             '-', 'Image', 'Iframe', 'Flash', 'Table', 
+             '-', 'BulletedList', 'NumberedList',
+             '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock',
+             '-', 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord',
+             '-', 'SpecialChar',
+             '-', 'Source',
+             ]
+        ],
+        'language': 'es',
+        'scayt_sLang': 'es_ES',
+        'wsc_lang': 'es_ES',
+        'extraAllowedContent': 'iframe[src,width,height,frameborder,style]',
+        'width': '100%',
+    },
+}
+
+
+###################################
 
 #configuraciones para enviar mensajes usando gmail
 EMAIL_USE_TLS = True
@@ -99,7 +141,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'webtiaclara@gmail.com'
 EMAIL_HOST_PASSWORD = 'webtiaclara1234'
 EMAIL_PORT = 587
-
+DEFAULT_FROM_EMAIL = 'webtiaclara@gmail.com'
+###################################
 try:
     from settings_local import *
 except ImportError:

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block titulo %} Contacto {% endblock %}
+{% block contenido %}
+    <div class="wrapper">
+         <div class="banner">
+
+            <img src="/img/contacto-banner-mendoza-fruit-trees-1600x450.jpg" alt="fondo de contacto">
+            <div class="sello">
+                <img src="/img/sello-mendoza-argentina.png" alt="sello">
+            </div> 
+        </div>
+        <div class="contacts-content">
+            <form method="POST" action="{% url "contact_form" %}">{% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="error"> 
+                    <span></span>
+                </div>
+                <div class="row half">
+                    <div class="6u">
+                        <input type="text" name="name" placeholder="{% trans "Nombre" %}"  value="{% if form.name.value %}{{ form.name.value }}{% endif %}" required /><p>{{ form.name.errors }}</p>
+                    </div>
+
+                    <div class="6u">
+                        <input type="email" name="email" placeholder="{% trans "Email" %}"  value="{% if form.email.value %}{{ form.email.value }}{% endif %}" required /><p>{{ form.email.errors }}</p>
+                    </div>
+                </div>
+                <div class="row half">
+                    <div class="12u">
+                        <textarea placeholder="{% trans "Mensaje" %}" rows="6" name="message" required>{% if form.message.value %}{{ form.message.value }}{% endif %}</textarea><p>{{ form.message.errors }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <ul class="actions">
+                            <li><input type="submit" value="{% trans "Enviar Mensaje" %}" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <div class="contacto-footer">
+                    <div class="conjunto-de-producto">
+                        <img src="/img/contacto-productos-en-conjunto.png" alt="productos">
+                    </div> 
+                    <div class="texto">
+                        <h3>Podés encontrar nuestros productos aquí:</h3>
+                        <span>Plaza de Chacras | Chacras de Coria 
+                            Luján de Cuyo | Mendoza
+                        Domingos de 10.00 a 19.00 hs.</span>
+                    </div>
+                    <div class="texto2">
+                        <h3>O pedirlos por encargo:</h3>
+                        <span>261153389738 | clara_barraza@hotmail.com
+                        Luzuriaga 415 | Dorrego - Guaymallén - Mza.</span>
+                    </div>
+                    <div class="guarda">
+                        <img src="/img/guarda-tia-clara.png" alt="guarda">
+                    </div>
+                </div> 
+        </div>
+    </div>
+    <script src="/js/jquery.validate.js"></script>
+    <script src="/js/contacto.js"></script>
+
+{% endblock %}

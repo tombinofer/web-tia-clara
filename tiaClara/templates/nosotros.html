@@ -1,60 +1,23 @@
-<!doctype html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="with=device-with, initial-scale=1, maximum-scale=1">
-	<title>Nosotros</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<!-- Consultar si todos los script se repiten en el head-->
-</head>
-<body>
-	<header class="barra">
-			<figure class="marca">
-				<a href="index.html"><img src="img/logo-tia-clara.png" alt="logo tia clara"></a> 
-			</figure>
-			<div class="menu-bar">
-				<a href="#" class="bt-menu"><span class="icon-list2"></span> </a>
+{% extends 'base.html' %}
+{% block titulo %} Nosotros {% endblock %}
+{% block contenido %}
+
+<div class="wrapper">
+		<div class="banner">
+			<img src="{{ nosotros.imagen_pagina_principal.url }}" alt="fondo-nosotros">
+			<div class="sello">
+				<img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
 			</div>
-		<nav>
-			<ul class="menu">
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="mermeladas.html">Mermeladas</a></li>
-				<li><a href="dulces.html">Dulces</a></li>
-				<li><a href="jaleas.html">Jaleas</a></li>
-				<li><a href="otros.html">Otros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="https://www.facebook.com/pages/T%C3%ADa-Clara-dulces-artesanales/1473508252899702" target="_blank" class="icon-facebook"></a></li>
-			</ul>
-		</nav>
-	</header>
-	<figure class="fondo-nosotros">
-		<img src="img/nosotros-1600x400.jpg" alt="cocina">
-	</figure>
-	<aside class="historia">
-		<figure class="sello-nosotros">
-			<img src="img/sello-producto-artesanal-130x130.png" alt="sello">
-		</figure>
-		<h2>Nuestra historia</h2>
-		<p>Siempre fuimos partidarios de consumir productos “hechos en casa” y lo logramos poniendo manos a la obra. Así fue como comenzamos a elaborar para consumo familiar, nuestros dulces , mermeladas y frutas en almíbar. En nuestra cocina se conjugaban las mejores frutas seleccionadas de estación, permitiéndonos disfrutar de una exquisita variedad de sabores durante todo el año.</p>
-		<p>Luego de un tiempo , nuestros vecinos, amigos y parientes nos insistieron para que les vendiéramos algunos, y fue así que tuvimos que empezar a producir en mayor cantidad.</p>
-		<p>Fue de esta manera y gracias al conocimiento sobre la Industria frutihorticola de uno de los integrantes de nuestra familia que decidimos emprender el desafío de la elaboración artesanal de confituras. Con el paso del tiempo logramos estandarizar el método de producción alcanzando altos niveles de calidad y nunca dejando de producir artesanalmente, así nace Tía Clara.</p>
-		<p>Podemos sintetizar la inmensa confianza depositada en nuestros productos bajo el siguiente lema:“SABOR GARANTIZADO”, si probaste algunos de nuestros productos y no te gustó lo traes y lo cambiamos por otro de tu agrado sin cargo.</p>
-		<p>Hoy en día, nuestros productos se comercializan en innumerables fiestas regionales y a la brevedad estaremos presentes en comercios dentro del rubro regionales.</p>
-		<p>Nuestro desafío es seguir creciendo siempre y cuando la producción sea de forma artesanal, nuestro único y más preciado límite.</p>
-		<h3>Tia Clara</h3>
-		<figure>
-			<img src="img/tia-clara-feria.jpg" alt="#">
-			<img src="img/tia-clara-maquinaria.jpg" alt="#">
-			<img src="img/tia-clara-etiquetado-manual.jpg" alt="#">
-			<figcaption>1</figcaption>
-		</figure>
-		</aside>
-	<footer>
-		<h4>Pedidos por encargo: 261 3 389 738 / clarabarraza6@gmail.com</h4>
-		<h6>Encontranos en: Plaza de Chacras Domingos de 10:00 a 19:00 hs. Paseo Mitre Jueves, Viernes, Sábados y Domingos de 18:00 a 22:00 hs.</h6>
-	</footer>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/menu.js"></script>
-</body>
-</html>
+		</div>
+		<div class="historia">
+			<div class="nuestra-historia">
+			{{ nosotros.descripcion|safe }}
+			</div>
+			<div>
+				{% for img in imagen %}
+				<img src="{{ img.imagen_pagina.url }}" alt="#">
+				{% endfor %}
+			</div>
+		</div>
+</div>
+{% endblock %}

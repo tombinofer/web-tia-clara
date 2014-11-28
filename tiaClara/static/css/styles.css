@@ -68,15 +68,7 @@ header nav ul li {
 aside {
     margin: 0;
     padding: 0;
-}
-
-footer {
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-    background: white;
-    overflow: hidden;
-}    
+} 
 
 /* Para agregar el icono de Facebook */
 .icon-facebook::before {
@@ -186,6 +178,15 @@ footer {
     width: 25%;
     margin: 2em 2em 2em 4em;
 }
+.product-image p a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-products{
+    margin-top: -10em;
+}
+
 .product-image img {
     width: 100%;
 }
@@ -193,24 +194,12 @@ footer {
     display: block;
     margin-top: -2em;
     text-align: center;
+    font-weight: bold;
 }
 .consulta img{
     width: 10%;
 }
-.franja-tipos{
-    background: #534709;
-    margin-top: -3px;
-    position: relative;
-    height: 3em;
-}
 
-.franja-tipos h2{
-    color: #FFFFFF;
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    margin-left: 40px;
-}
 
 /* Para agregar la Animacion */
 .zoomIt{
@@ -279,7 +268,45 @@ transform: scale(1.1)
 }
 /* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
 
+ footer{
+    background: white;
+    margin: 0;
+    padding: 0;
+    }
 
+
+    .footer div{
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display:inline-block;
+    width: 18%;
+    font-size: 14px;
+    height: 100px;
+    }
+
+    .datos-footer {
+        width: 30%;
+    }
+
+    .datos-footer span{
+        float: right;
+        width: 65%;
+        margin: 0;
+
+    }
+
+    .datos-footer img{
+        float: left;
+        width: 30%;
+        vertical-align: middle;
+    }
+
+    .copyright span{
+        font-size: 12px;
+        width: 10%;
+        margin-right: 0;
+    }
 
 
 /* --------------- Nosotros -------------------------------------!!!!!!!*/
@@ -293,7 +320,7 @@ transform: scale(1.1)
     width: 100%;
 }
 
-
+/*
 .historia h2{
     margin: 0em 0.5em 0.5em 0.6em;
     padding: 0.5em 1em 0em 2em;
@@ -307,6 +334,17 @@ transform: scale(1.1)
 .historia h3{
     margin: 2em 2em 2em 2em;
     padding: 0.5em 1em 0em 2em;
+}
+*/
+.nuestra-historia {
+-webkit-column-count:3;
+-moz-column-count:3;
+column-count:3;
+margin: 10em;
+margin-top: 2em;
+-webkit-column-gap:50px;
+-moz-column-gap:50px;
+columnn-gap: 50px;
 }
 /* --------------- nav flotante -------------!!!!!!!*/
 nav .flotante {
@@ -351,10 +389,7 @@ nav .flotante {
 .banner{
     width: 100%;
 }
-dd, dt,dl{
-    margin:0;
-    padding: 0;
-}
+
 .banner img{
     width: 100%;
     z-index: 1;
@@ -362,7 +397,9 @@ dd, dt,dl{
 .productos{
     margin:0;
     padding: 0;
+    display: inline-block;
 }
+
 .productos li{
     list-style: none;
 }
@@ -372,14 +409,29 @@ dd, dt,dl{
     z-index: 3;
 
 }
-.sugerencias{
-   
 
+.banner-productos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.banner-productos img{
+    width: 100%;
 }
 
-.consultas{
+.franja-tipos{
+    background: #534709;
+    margin-top: -3px;
+    position: relative;
+    height: 3em;
+}
 
-
+.franja-tipos h2{
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
 }
 
 .banner-productos{
@@ -393,23 +445,18 @@ dd, dt,dl{
 
 .franja-blanca{
     background: #FFFFFF;
-    margin-top: -3px;
-    position: relative;
+    margin-top: -23px;
     height: 3em;
     z-index: 1;
 }
 
 .franja-blanca h3{
     color: black;
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    margin-left: 40px;
+    margin-left: 500px;
+    vertical-align: middle;
 }
 
-.productos {
-    display: inline-block;
-}
+
 /* --------------- Contacto ---------------------!!!!!!!*/
 
 .form-contacts-submit{
@@ -417,8 +464,8 @@ dd, dt,dl{
     margin: 0 auto;
     text-align:left
 }
-legend
-{
-   font-family: "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
-   font-weight: bold;
+.contacts-content{
+    margin:0;
+    padding: 0;
+
 }

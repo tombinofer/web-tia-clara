@@ -4,26 +4,38 @@
 
 <div class="wrapper">
 		<div class="banner">
-			<img src="/img/mermelada-banner-jam-and-bread-1600x450.jpg" alt="fondo de mermeladas">
+			<img src="{{ banner.imagen_pagina_principal.url }}" alt="fondo de mermeladas">
 			<div class="sello">
 				<img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
 			</div>
 		</div>
 		<div id="acordion">
-
+			<div class="franja-tipos">
+				<h2>{{ mermelada0.tipos.nombre }}</h2>
+			</div>
+			<ul class="productos">
+			{% for mermelada in mermeladas %}
+				{% ifchanged mermelada.tipos %}
+				{% if mermelada.tipos != mermelada0.tipos %}
+				</ul>
 				<div class="franja-tipos">
-					<h2>{{ tipo.nombre }}</h2>
+					<h2>{{ mermelada.tipos.nombre }}</h2>
 				</div>
 				<ul class="productos">
-					{% for mermelada in mermeladas %}
+				{% endif %}
+				{% endifchanged %}
 					<li>
+						{% if mermelada.imagen_banner != '' %}
 						<div class="banner-productos">
-							<img src="{{ mermelada.(variable_imagekit).url }}" alt="banner de frutillas">
+							<img src="{{ mermelada.imagen_banner_producto.url }}" alt="banner de frutillas">
 						</div>
+						{% endif %}
 						<div class="franja-blanca">
 						<h3>{{ mermelada.nombre }}</h3>
 						</div>
-						<img class="frascos" src="{{ MEDIA_URL }}imgProducto/{{mermelada.fk_url}}" alt="FRUTILLAS">
+						{% if mermelada.imagen_producto != '' %}
+						<img class="frascos" src="{{ mermelada.imagen_producto_vista.url }}" alt="FRUTILLAS">
+						{% endif %}
 						<span class="sugerencias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempor augue .</span>
 						<div class="consulta">
 							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">

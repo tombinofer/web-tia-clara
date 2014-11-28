@@ -16,8 +16,10 @@ from django.template import RequestContext
 #    return render_to_response('dulces.html',context)
 
 def indexMermeladas(request):
+    banner = Pagina.objects.get(nombre="Mermeladas")
     categoria_mermelada = Categoria.objects.get(nombre="Mermeladas")
-    return render_to_response("mermeladas.html",{"mermeladas":categoria_mermelada.producto_set.all()}, context_instance=RequestContext(request))
+    productos = categoria_mermelada.producto_set.all().order_by('tipos__nombre')
+    return render_to_response("mermeladas.html",{"mermeladas":productos, "mermelada0": productos[0], "banner":banner}, context_instance=RequestContext(request))
 
 
 def lista_paginas(request):
@@ -26,17 +28,17 @@ def lista_paginas(request):
 
 
 
-def contacto(request):
-    if request.method=="POST":
-        formContact = ContactoForm(request.POST)
-        if formContact.is_valid():
-            titulo = 'Sitio Web Tía Clara - Producto Artesanal :'
-            contenido = formContact.cleaned_data['nombre'] + "\n" + formContact.cleaned_data['mensaje'] + "\n"
-            contenido += 'Comunicarse a: ' + formContact.cleaned_data['correo']
-            correo = EmailMessage(titulo, contenido, to=['webtiaclara@gmail.com'], headers={'Reply-To': formContact.cleaned_data['correo']})
-            correo.send()
-            return HttpResponseRedirect('/')
-    else:
-        formContact = ContactoForm()
-    return render_to_response("contacto.html",{"formContact":formContact}, context_instance=RequestContext(request))
+
+    
+#def contacto(request):
+#        formContact = ContactoForm(request.POST)
+#        if formContact.is_valid():
+#            titulo = 'Sitio Web Tía Clara - Producto Artesanal :'
+#            contenido = formContact.cleaned_data['nombre'] + "\n" + formContact.cleaned_data['mensaje'] + "\n"
+#            contenido += 'Comunicarse a: ' + formContact.cleaned_data['correo']
+#            correo = EmailMessage(titulo, contenido, to=['webtiaclara@gmail.com'], headers={'Reply-To': formContact.cleaned_data['correo']})
+#            correo.send()
+#            return HttpResponseRedirect('/')
+#        formContact = ContactoForm()
+#    return render_to_response("contacto.html",{"formContact":formContact}, context_instance=RequestContext(request))
 
