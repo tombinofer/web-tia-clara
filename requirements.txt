@@ -3,6 +3,7 @@ Pillow==2.6.1
 argparse==1.2.1
 django-appconf==0.6
 django-ckeditor==4.4.6
+-e git+https://github.com/nunataksoftware/django-deployer.git@a3d655e07adcd25950cfed30ee6c9db75c6bc4af#egg=django_deployer-dev
 django-imagekit==3.2.4
 pilkit==1.1.12
 six==1.8.0
