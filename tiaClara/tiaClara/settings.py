@@ -25,7 +25,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://tombinofer.pythonanywhere.com/','www.tiaclara.com.ar','tiaclara.com.ar','http://www.tiaclara.com.ar','http://tiaclara.com.ar']
 
 ADMINS = (
     (u'Fernando Orozco', 'fernandogorozco@gmail.com'),
@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'imagekit',
     'contact_form',
     'ckeditor',
+    'deployer',
 )
 
 MIDDLEWARE_CLASSES = (
