@@ -133,17 +133,6 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-
-###################################
-
-#configuraciones para enviar mensajes usando gmail
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'webtiaclara@gmail.com'
-EMAIL_HOST_PASSWORD = 'webtiaclara1234'
-EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'webtiaclara@gmail.com'
-###################################
 try:
     from settings_local import *
 except ImportError:
