@@ -48,6 +48,7 @@ INSTALLED_APPS = (
     'contact_form',
     'ckeditor',
     'deployer',
+    #'django-easy-pdf',
 )
 
 MIDDLEWARE_CLASSES = (
