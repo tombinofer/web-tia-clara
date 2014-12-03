@@ -2,6 +2,9 @@
 View which can render and send email from a contact form.
 
 """
+from django.shortcuts import render_to_response, get_object_or_404, render
+from django.template import RequestContext
+
 
 from django.core.urlresolvers import reverse
 from django.views.generic.edit import FormView
@@ -33,3 +36,4 @@ class ContactFormView(FormView):
         # make the reverse() call).
         return reverse('contact_form_sent')
 
+    

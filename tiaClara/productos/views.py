@@ -5,7 +5,6 @@ from django.views import generic
 from productos.models import Receta, Producto, Tipo, Categoria
 from contenidos.models import Pagina, Imagen
 from django.conf import settings
-from productos.forms import ContactoForm
 from django.core.mail import EmailMessage
 from django.template import RequestContext
 
@@ -21,10 +20,23 @@ def indexMermeladas(request):
     productos = categoria_mermelada.producto_set.all().order_by('tipos__nombre')
     return render_to_response("mermeladas.html",{"mermeladas":productos, "mermelada0": productos[0], "banner":banner}, context_instance=RequestContext(request))
 
+def indexDulces(request):
+    banner = Pagina.objects.get(nombre="Dulces")
+    categoria_dulce = Categoria.objects.get(nombre="Dulces")
+    productos = categoria_dulce.producto_set.all().order_by('tipos__nombre')
+    return render_to_response("dulces.html",{"dulces":productos, "dulce0":productos[0], "banner":banner},context_instance=RequestContext(request))
 
-def lista_paginas(request):
-    paginas = Pagina.objects.all()
-    return render_to_response("contacto.html",{"paginas":paginas}, context_instance=RequestContext(request))
+def indexJaleas(request):
+    banner = Pagina.objects.get(nombre="Jaleas")
+    categoria_jalea = Categoria.objects.get(nombre="Jaleas")
+    productos = categoria_jalea.producto_set.all().order_by('tipos__nombre')
+    return render_to_response("jaleas.html",{"jaleas":productos, "jalea0":productos[0], "banner":banner},context_instance=RequestContext(request))
+
+def indexOtros(request):
+    banner = Pagina.objects.get(nombre="Otros")
+    categoria_otro = Categoria.objects.get(nombre="Otros")
+    productos = categoria_otro.producto_set.all().order_by('tipos__nombre')
+    return render_to_response("otros.html",{"otros":productos, "otro0":productos[0], "banner":banner},context_instance=RequestContext(request))
 
 
 

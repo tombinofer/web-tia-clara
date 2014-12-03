@@ -311,6 +311,7 @@ transform: scale(1.1)
 
 /* --------------- Nosotros -------------------------------------!!!!!!!*/
 /* nth-of-type(odd) - impar      even - par*/
+
 .fondo-nosotros{
     padding: 0;
     margin: 0;
@@ -319,29 +320,19 @@ transform: scale(1.1)
 .fondo-nosotros img{
     width: 100%;
 }
-
-/*
-.historia h2{
-    margin: 0em 0.5em 0.5em 0.6em;
-    padding: 0.5em 1em 0em 2em;
+.imagenes-asociadas{
+    text-align: center;
+}
+.imagenes-asociadas img{
+    margin:15px;
 }
 
-.historia >  p {
-    margin: 0em 2em 0em 2em;
-    padding: 0.5em 1em 0em 2em;
-}
-
-.historia h3{
-    margin: 2em 2em 2em 2em;
-    padding: 0.5em 1em 0em 2em;
-}
-*/
 .nuestra-historia {
 -webkit-column-count:3;
 -moz-column-count:3;
 column-count:3;
-margin: 10em;
-margin-top: 2em;
+margin: 2em 5em 2em 5em;
+
 -webkit-column-gap:50px;
 -moz-column-gap:50px;
 columnn-gap: 50px;
@@ -458,7 +449,10 @@ nav .flotante {
 
 
 /* --------------- Contacto ---------------------!!!!!!!*/
-
+.for{
+    width: 60%;
+    background: red;
+}
 .form-contacts-submit{
     width: 60%;
     margin: 0 auto;
@@ -467,5 +461,24 @@ nav .flotante {
 .contacts-content{
     margin:0;
     padding: 0;
-
+}
+.contacto.footer{
+    background: green;
+}
+.formulario{
+    float: right;
+    background: blue;
+    margin: 4em;
+}
+.conjunto-de-producto{
+    background: white;
+    width: 40%;
+}
+.texto{
+    float: left;
+    background: yellow;
+}
+.texto2{
+    float: left;
+    background: pink;
 }

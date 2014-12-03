@@ -13,5 +13,7 @@ urlpatterns = patterns('',
 
     #url(r'^$', views.dulces, name='dulces'),
     url(r'^$', views.indexMermeladas, name='index'),
+    #url(r'^$', views.indexDulces, name='dulces'),
+
 
 )

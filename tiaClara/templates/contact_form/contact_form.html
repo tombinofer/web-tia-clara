@@ -12,33 +12,35 @@
             </div> 
         </div>
         <div class="contacts-content">
-            <form method="POST" action="{% url "contact_form" %}">{% csrf_token %}
-                {{ form.non_field_errors }}
-                <div class="error"> 
-                    <span></span>
-                </div>
-                <div class="row half">
-                    <div class="6u">
-                        <input type="text" name="name" placeholder="{% trans "Nombre" %}"  value="{% if form.name.value %}{{ form.name.value }}{% endif %}" required /><p>{{ form.name.errors }}</p>
+            <div class="formulario">
+                <form class="for" method="POST" action="{% url "contact_form" %}">{% csrf_token %}
+                    {{ form.non_field_errors }}
+                    <div class="error"> 
+                        <span></span>
                     </div>
+                    <div class="row half">
+                        <div class="6u">
+                            <input type="text" name="name" placeholder="{% trans "Nombre" %}"  value="{% if form.name.value %}{{ form.name.value }}{% endif %}" required /><p>{{ form.name.errors }}</p>
+                        </div>
 
-                    <div class="6u">
-                        <input type="email" name="email" placeholder="{% trans "Email" %}"  value="{% if form.email.value %}{{ form.email.value }}{% endif %}" required /><p>{{ form.email.errors }}</p>
+                        <div class="6u">
+                            <input type="email" name="email" placeholder="{% trans "Email" %}"  value="{% if form.email.value %}{{ form.email.value }}{% endif %}" required /><p>{{ form.email.errors }}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row half">
-                    <div class="12u">
-                        <textarea placeholder="{% trans "Mensaje" %}" rows="6" name="message" required>{% if form.message.value %}{{ form.message.value }}{% endif %}</textarea><p>{{ form.message.errors }}</p>
+                    <div class="row half">
+                        <div class="12u">
+                            <textarea placeholder="{% trans "Mensaje" %}" rows="6" name="message" required>{% if form.message.value %}{{ form.message.value }}{% endif %}</textarea><p>{{ form.message.errors }}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="12u">
-                        <ul class="actions">
-                            <li><input type="submit" value="{% trans "Enviar Mensaje" %}" /></li>
-                        </ul>
+                    <div class="row">
+                        <div class="12u">
+                            <ul class="actions">
+                                <li><input type="submit" value="{% trans "Enviar Mensaje" %}" /></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <div class="contacto-footer">
                     <div class="conjunto-de-producto">
                         <img src="/img/contacto-productos-en-conjunto.png" alt="productos">
@@ -57,7 +59,7 @@
                     <div class="guarda">
                         <img src="/img/guarda-tia-clara.png" alt="guarda">
                     </div>
-                </div> 
+            </div> 
         </div>
     </div>
     <script src="/js/jquery.validate.js"></script>

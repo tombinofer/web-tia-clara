@@ -27,14 +27,14 @@
 					<li>
 						{% if mermelada.imagen_banner != '' %}
 						<div class="banner-productos">
-							<img src="{{ mermelada.imagen_banner_producto.url }}" alt="banner de frutillas">
+							<img src="{{ mermelada.imagen_banner_producto.url }}" alt="banner de {{ mermelada.nombre }}">
 						</div>
 						{% endif %}
 						<div class="franja-blanca">
 						<h3>{{ mermelada.nombre }}</h3>
 						</div>
 						{% if mermelada.imagen_producto != '' %}
-						<img class="frascos" src="{{ mermelada.imagen_producto_vista.url }}" alt="FRUTILLAS">
+						<img class="frascos" src="{{ mermelada.imagen_producto_vista.url }}" alt="imagen de {{ mermelada.nombre }}">
 						{% endif %}
 						<span class="sugerencias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempor augue .</span>
 						<div class="consulta">
