@@ -13,7 +13,7 @@ urlpatterns = patterns('',
 
     #url(r'^$', views.dulces, name='dulces'),
     url(r'^$', views.indexMermeladas, name='index'),
-    url(r'^hello.pdf$', views.HelloPDFView.as_view(), name='pdf'),
+    #url(r'^hello.pdf$', views.HelloPDFView.as_view(), name='pdf'),
 
 
 )
