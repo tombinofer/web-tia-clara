@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     url(r'^contacto/', include('contact_form.urls')),
     url(r'^deployer/', include('deployer.urls')),
 
-    #url(r"^hello.pdf$", 'productos.views.HelloPDFView.as_view()'),
+    url(r"^hello.pdf$", 'productos.views.HelloPDFView.as_view()'),
 
 
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
