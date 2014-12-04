@@ -7,13 +7,14 @@ from django.views import generic
 from django.views.generic import ListView
 from django.views.generic import DetailView
 from productos.models import Producto, Tipo, Categoria, Receta
-from productos import views
+#from productos import views
 
 urlpatterns = patterns('',
 
     #url(r'^$', views.dulces, name='dulces'),
-    url(r'^$', views.indexMermeladas, name='index'),
-    url(r'^hello.pdf$', views.HelloPDFView.as_view(), name='pdf'),
-
+    #url(r'^$', views.indexMermeladas, name='index'),
+    url(r'^$', indexMermeladas, name='index'),
+    #url(r'^hello.pdf$', views.HelloPDFView.as_view(), name='pdf'),
+    url(r'^hello.pdf$', HelloPDFView.as_view(), name='pdf'),
 
 )
