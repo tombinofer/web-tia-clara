@@ -39,17 +39,17 @@ def indexOtros(request):
     productos = categoria_otro.producto_set.all().order_by('tipos__nombre')
     return render_to_response("otros.html",{"otros":productos, "otro0":productos[0], "banner":banner},context_instance=RequestContext(request))
 
-#from easy_pdf.views import PDFTemplateView
+from easy_pdf.views import PDFTemplateView
 
-#class HelloPDFView(PDFTemplateView):
-#    template_name = "hello.html"
+class HelloPDFView(PDFTemplateView):
+    template_name = "hello.html"
 
-#    def get_context_data(self, **kwargs):
-#        return super(HelloPDFView, self).get_context_data(
-#            pagesize="A4",
-# #           title="Productos",
-#            
-#        )
+    def get_context_data(self, **kwargs):
+        return super(HelloPDFView, self).get_context_data(
+            pagesize="A4",
+            title="Productos",
+            
+        )
      
 
 
