@@ -1,0 +1,18 @@
+Django==1.7.1
+GitPython==0.3.2.1
+Pillow==2.6.1
+PyPDF2==1.23
+argparse==1.2.1
+django-appconf==0.6
+django-ckeditor==4.4.6
+-e git+https://github.com/nunataksoftware/django-deployer.git@9d7b720c1aa0e39a17cc9fd4f1bf9bda48ef4d0b#egg=django_deployer-master
+django-easy-pdf==0.1.0
+django-imagekit==3.2.4
+gitdb==0.6.0
+html5lib==0.999
+pilkit==1.1.12
+reportlab==3.1.8
+six==1.8.0
+smmap==0.8.3
+wsgiref==0.1.2
+xhtml2pdf==0.0.6

@@ -19,6 +19,9 @@ urlpatterns = patterns('',
     url(r'^contacto/', include('contact_form.urls')),
     url(r'^deployer/', include('deployer.urls')),
 
+    url(r"^hello.pdf$", 'productos.views.HelloPDFView.as_view()'),
+
+
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     url(r'^css/(?P<path>.*)$', 'django.views.static.serve',{'document_root': os.path.join(settings.STATIC_ROOT, 'css')}),
@@ -35,3 +38,4 @@ admin.site.site_header = u'Administrador del sitio Web Tía Clara'
 
 # Texto a poner arriba de la página de index del admin
 admin.site.index_title = u'Panel de control del sitio Web Tía Clara'
+
