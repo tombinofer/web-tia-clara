@@ -12,6 +12,17 @@
     font-weight: normal;
     font-style: normal;
 }
+/* Para pegar el menu */
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /*background-color: rgba(0, 20, 0, 0.8);*/
+    /*background-color: rgba(0,0,0,0.3);*/
+    background-color: rgba(255,255,255,0.7);
+}
+
 /* Para agregar el icono de Menu */
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon';
@@ -156,7 +167,7 @@ aside {
     width:15%;
     float: left;
     position: relative;
-    min-width: 150px;
+    min-width: 200px;
     /* width: 20% (medidas originales) tamaño de la marca!!!!*/
     margin-left: 65px;
     /*agregue un margin left para alinear el logo con el frasco */
@@ -218,32 +229,68 @@ position: relative;
 -ms-transform: scale(1.1);
 transform: scale(1.1)
 }
+@media screen and (max-width: 1203px) {
+    .sello img{
+        float: left;
+        margin-top: -200px;
+        margin-left: 700px;
+
+    }
+    .home-products{
+
+    }
+    .product-image {
+        display: inline-block;
+        width: 22%;
+        margin: 2em 2em 2em 4em;
+    }
+}
+@media screen and (max-width: 891px) {
+
+    .home-products{
+
+    }
+    .product-image {
+        display: block;
+        width: 50%;
+        margin: 5em 2em 0em 7em;
+        justify-content:center;
+    }
+    .product-image-description{
+        font-size: 28px;
+    }
+    .product-image-description2{
+        font-size: 18px;
+    }
+
+}
+
 /* ---------------    responsivee      --------------------------------------------------!!!!!!!*/
 @media screen and (max-width: 1076px) {
-  
+/* ----BASE.HTML---*/
   header nav{
     width: 50%;
     height: 100%;
     margin: 0;
     position: fixed;
-    left: -100%;
+    left: -110%;
+    z-index: 1000;
+    min-width: 100px;
   }
-  
-.marca img{
-    width:70%;
+
+
+.marca a img{
+    width:40%;
     float: left;
     margin: 1%;
-    min-width: 150px;
-    /*  width:70%;
-    float: left;
-    margin: 1%;
-    min-width: 150px; (medidas originales) ? */
+    min-width: 300px;
+
  }
 .menu-bar{
     display: block;
     width: 100%;
-
  }
+
 .menu-bar span{
     float: right;
     font-size: 300%;
@@ -263,8 +310,97 @@ transform: scale(1.1)
     float: none;
     margin: 0em 1.5em 0em 0em;
     padding: 15px;
+}
+
+.menu li a{
+    font-size: 30px;
    }
  
+}
+/* ---------------    responsivee      --------------------------------------------------!!!!!!!*/
+@media screen and (max-width: 800px) {
+
+.sello img{
+        float: left;
+        margin-top: -200px;
+        margin-left: 700px;
+        width: 100%;
+    }
+/* -- footer----*/
+
+.footer div{
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display:block;
+    width: 18%;
+    font-size: 14px;
+    height: 100px;
+}
+
+    .datos-footer{
+      margin: 10px;
+      margin-left: 10px;
+      margin-top: 30px;
+      width: 40%;
+      font-size: 16px;  
+      height: 100px;
+      display: block;  
+          
+    }
+
+    .datos-footer span{
+        float: right;
+        width: 90%;
+        margin: 0;
+
+    }
+
+    .datos-footer img{
+        float: left;
+        width: 60%;
+        vertical-align: middle;
+    }
+
+    .copyright span{
+        font-size: 12px;
+        width: 20%;
+        margin-right: 0;
+        color:black;
+    }
+
+}
+/* ---------------    responsivee      --------------------------------------------------!!!!!!!*/
+@media screen and (max-width: 572px) {
+
+header nav{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: -110%;
+    z-index: 1000;
+    min-width: 100px;
+  }
+.menu li {
+    display:block;
+    float: none;
+    margin: 1em 0em 0em 0em;
+    padding: 15px;
+ }   
+.menu li a{
+    font-size: 18px;
+   }
+/*index----------*/
+.banner{
+    width: 100%;
+    background-size:cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position:center; /* IE fix */
+    }
+    
 }
 /* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
 

@@ -13,7 +13,10 @@
         </div>
         <div class="contacts-content">
             <div class="formulario">
-                <form class="for" method="POST" action="{% url "contact_form" %}">{% csrf_token %}
+                <div class="error">
+                    <span></span>
+                </div>
+                <form class="for" id="formContact" method="POST" action="{% url "contact_form" %}">{% csrf_token %}
                     {{ form.non_field_errors }}
                     <div class="error"> 
                         <span></span>
