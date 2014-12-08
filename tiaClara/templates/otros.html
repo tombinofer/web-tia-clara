@@ -33,13 +33,15 @@
 						{% if otro.imagen_producto != '' %}
 						<img class="frascos" src="{{ otro.imagen_producto_vista.url }}" alt="imagen de {{ otro.nombre }}">
 						{% endif %}
-						<span class="sugerencias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempor augue .</span>
-						<div class="consulta">
-							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
-						</div>
-						<div class="guarda">
-							<img src="/img/guarda-tia-clara.png" alt="guarda/back">
-						</div>
+						
+							<p class="sugerencias">{{ otro.descripcion }}</p>	
+						
+							<div class="consulta">
+								<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
+							</div>
+							<div class="guarda">
+								<img src="/img/guarda-tia-clara.png" alt="guarda/back">
+							</div>
 					</li>
 					{% endfor %}
 				</ul>

@@ -39,3 +39,5 @@ admin.site.site_header = u'Administrador del sitio Web Tía Clara'
 # Texto a poner arriba de la página de index del admin
 admin.site.index_title = u'Panel de control del sitio Web Tía Clara'
 
+handler404 = 'productos.views.handler404'
+handler500 = 'productos.views.handler500'

@@ -6,7 +6,7 @@ from django.conf import settings
 from django.views import generic
 from django.views.generic import ListView
 from django.views.generic import DetailView
-from productos.models import Producto, Tipo, Categoria, Receta
+from productos.models import Producto, Tipo, Categoria
 #from productos import views
 
 urlpatterns = patterns('',

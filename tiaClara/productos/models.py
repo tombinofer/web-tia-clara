@@ -3,14 +3,6 @@ from django.db import models
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
 
-
-
-class Receta(models.Model):
-    nombre = models.CharField(max_length=200)
-    descripcion = models.TextField(help_text="Redacta una descripción")
-    def __unicode__(self):              # __str__ en Python 3
-        return self.nombre
-
 class Categoria(models.Model):
     nombre = models.CharField(max_length=200)
     descripcion = models.TextField()
@@ -24,8 +16,8 @@ class Tipo(models.Model):
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=200)
+    descripcion = models.TextField(verbose_name = u"Maridaje o Receta!")
     productos_categorias = models.ManyToManyField(Categoria, verbose_name = u"Categorias")
-    productos_recetas = models.ManyToManyField(Receta, null=True, blank=True, verbose_name = u"Recetas")
     tipos = models.ForeignKey(Tipo)
     def __unicode__(self):              # __str__ en Python 3
         return self.nombre

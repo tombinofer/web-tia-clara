@@ -33,7 +33,7 @@
 						{% if dulce.imagen_producto != '' %}
 						<img class="frascos" src="{{ dulce.imagen_producto_vista.url }}" alt="imagen de {{ dulce.nombre }}">
 						{% endif %}
-						<span class="sugerencias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempor augue .</span>
+						<p class="maridaje">{{ dulce.descripcion }}</p>
 						<div class="consulta">
 							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
 						</div>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
-from productos.models import Receta, Categoria, Tipo, Producto
+from productos.models import Categoria, Tipo, Producto
 from django import forms
 
 #################### Inline ####################################
@@ -21,12 +21,12 @@ class ProductoAdmin(admin.ModelAdmin):
         (None,               {'fields': ['nombre']}),
         (None,               {'fields': ['tipos']}),
         (u'Categorias', {'fields': ['productos_categorias']}),
-        (None, {'fields': ['productos_recetas']}),
+        (u'Categorias',               {'fields': ['descripcion']}),
         (u'Imágen Banner', {'fields': ['imagen_banner']}),
         (u'Imágen Producto', {'fields': ['imagen_producto']}),
     ]
 
-    filter_horizontal = ['productos_categorias','productos_recetas'] #para dar un filtro horizontal para mostrar relaciones ManyToManyField                            
+    filter_horizontal = ['productos_categorias'] #para dar un filtro horizontal para mostrar relaciones ManyToManyField                            
     list_display = ('nombre','tipos',)
 
     list_filter = ('productos_categorias','tipos')
@@ -41,7 +41,6 @@ class TipoAdmin(admin.ModelAdmin):
 ###################  Registro de Modelos al Admin   #################
 
 
-admin.site.register(Receta)
 admin.site.register(Categoria)
 admin.site.register(Tipo)
 admin.site.register(Producto, ProductoAdmin)
