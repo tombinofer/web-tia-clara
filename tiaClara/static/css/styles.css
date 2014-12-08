@@ -4,11 +4,11 @@
 /* Para agregar el icono de Facebook */
 @font-face {
     font-family: 'icomoon';
-    src:url('fonts/icomoon.eot?bixkth');
-    src:url('fonts/icomoon.eot?#iefixbixkth') format('embedded-opentype'),
-        url('fonts/icomoon.woff?bixkth') format('woff'),
-        url('fonts/icomoon.ttf?bixkth') format('truetype'),
-        url('fonts/icomoon.svg?bixkth#icomoon') format('svg');
+    src:url('/fonts/icomoon.eot?bixkth');
+    src:url('/fonts/icomoon.eot?#iefixbixkth') format('embedded-opentype'),
+        url('/fonts/icomoon.woff?bixkth') format('woff'),
+        url('/fonts/icomoon.ttf?bixkth') format('truetype'),
+        url('/fonts/icomoon.svg?bixkth#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -508,6 +508,44 @@ nav .flotante {
 }
 
 /* --------------- Dulces - Mermeladas- jaleas- otros - contacto !!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
+.acordion {
+  width:100%;
+  margin:30px auto 0 auto;
+  overflow:hidden;
+  margin-top: -17px;
+  border-bottom: solid 1px #c4c4c4;
+}
+.accordion h2 {
+
+ background: #534709;
+ padding: 15px 15px;
+ margin: 0;
+ font: bold 120%/100% serif;
+ color: #fff;
+ border: solid 1px #bab03e;
+ border-bottom: none;
+ cursor: pointer;
+}
+.accordion h2:hover {
+ background-color: #bab03e;
+}
+.accordion h2.active {
+ background-position: right 5px;
+}
+.accordion ul {
+ background: #bab03e;
+ margin: 0;
+ width: 100%;
+ /*
+ padding: 10px 15px 20px;
+ border-left: solid 1px #c4c4c4;
+ border-right: solid 1px #c4c4c4;
+ */
+
+}
+.selected {
+  color:#1ABC9C;
+}
 .wrapper{
     margin: 0;
     padding: 0;
@@ -524,12 +562,12 @@ nav .flotante {
 .productos{
     margin:0;
     padding: 0;
-    display: inline-block;
-}
-
-.productos li{
+    width:100%;
+    margin:0 auto;
+    background:#bab03e;
     list-style: none;
 }
+
 .frascos{
     margin-top: -300px;
     width: 40%;
@@ -546,20 +584,6 @@ nav .flotante {
     width: 100%;
 }
 
-.franja-tipos{
-    background: #534709;
-    margin-top: -3px;
-    position: relative;
-    height: 3em;
-}
-
-.franja-tipos h2{
-    color: #FFFFFF;
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    margin-left: 40px;
-}
 
 .banner-productos{
     width: 100%;
@@ -586,9 +610,19 @@ nav .flotante {
 
 /* --------------- Contacto ---------------------!!!!!!!*/
 .for{
-    width: 60%;
-    background: red;
+    width: 80%;
+    height: 400px;
 }
+input, textarea{
+    width: 100%;
+}
+.enviar input{
+    width: 140px;
+}
+.mensaje input{
+    height: 50%;
+}
+
 .form-contacts-submit{
     width: 60%;
     margin: 0 auto;
@@ -602,19 +636,27 @@ nav .flotante {
     background: green;
 }
 .formulario{
+    width: 50%;
     float: right;
-    background: blue;
-    margin: 4em;
+
 }
-.conjunto-de-producto{
-    background: white;
-    width: 40%;
+.conjunto-de-producto img{
+    width: 20%;
+    margin-left: 10%;
+
 }
 .texto{
     float: left;
-    background: yellow;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: -2em;
 }
-.texto2{
-    float: left;
-    background: pink;
+
+.texto h4{
+    margin-left: 0;
+    margin-bottom: -0.5em;
+
+}
+.texto p{
+    font-size: 14px;
 }

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block titulo %} Otros {% endblock %}
+
 {% block contenido %}
 
 <div class="wrapper">
@@ -9,18 +10,14 @@
 				<img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
 			</div>
 		</div>
-		<div id="acordion">
-			<div class="franja-tipos">
-				<h2>{{ otro0.tipos.nombre }}</h2>
-			</div>
+		<div id="acordion" class="accordion">
+			<h2>{{ otro0.tipos.nombre }}</h2>	
 			<ul class="productos">
 			{% for otro in otros %}
 				{% ifchanged otro.tipos %}
 				{% if otro.tipos != otro0.tipos %}
 				</ul>
-				<div class="franja-tipos">
 					<h2>{{ otro.tipos.nombre }}</h2>
-				</div>
 				<ul class="productos">
 				{% endif %}
 				{% endifchanged %}
@@ -31,7 +28,7 @@
 						</div>
 						{% endif %}
 						<div class="franja-blanca">
-						<h3>{{ otro.nombre }}</h3>
+							<h3>{{ otro.nombre }}</h3>
 						</div>
 						{% if otro.imagen_producto != '' %}
 						<img class="frascos" src="{{ otro.imagen_producto_vista.url }}" alt="imagen de {{ otro.nombre }}">
@@ -48,4 +45,5 @@
 				</ul>
 		</div>
 </div>
+
 {% endblock %}
