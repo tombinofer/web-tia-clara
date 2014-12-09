@@ -11,13 +11,14 @@
 			</div>
 		</div>
 		<div id="acordion" class="accordion">
-			<h2>{{ otro0.tipos.nombre }}</h2>	
-			<ul class="productos">
+		<a id="topSpot" class="topSpot"></a>
+			<div class="tipos"> <a href="#topSpot"><h2>{{ otro0.tipos.nombre }}</h2></a></div>	
+				<ul class="productos">
 			{% for otro in otros %}
 				{% ifchanged otro.tipos %}
 				{% if otro.tipos != otro0.tipos %}
 				</ul>
-					<h2>{{ otro.tipos.nombre }}</h2>
+					<div class="tipos"> <a href="#topSpot"><h2>{{ otro.tipos.nombre }}</h2></a></div>
 				<ul class="productos">
 				{% endif %}
 				{% endifchanged %}

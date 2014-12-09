@@ -541,12 +541,13 @@ transform: scale(1.1)
                           /* -- footer----*/
 
                         .footer div{
-                            margin: 10px;
+                            margin: 7px;
                             margin-left: 10px;
                             margin-top: 30px;
+                            margin-bottom: 40px;
                             display:block;
-                            width: 25%;
-                            font-size: 14px;
+                            width: 200px    ;
+                            font-size: 13px;
                             height: 100px;
                         }
 
@@ -563,7 +564,7 @@ transform: scale(1.1)
 
                                 .datos-footer span{
                                     float: right;
-                                    width: 90%;
+                                    width: 70%;
                                     margin: 0;
 
                         }
@@ -610,8 +611,8 @@ transform: scale(1.1)
     }
 
     .footer div{
-        margin: 10px;
-        margin-left: 10px;
+        margin: 7px;
+        margin-left: 24px;
         margin-top: 30px;
         display:inline-block;
         width: 200px;
@@ -625,7 +626,7 @@ transform: scale(1.1)
 
         .datos-footer span{
             float: right;
-            width: 75%;
+            width: 70%;
             margin: 0;
 
         }
@@ -685,7 +686,7 @@ transform: scale(1.1)
     margin-top: -17px;
     border-bottom: solid 1px #c4c4c4;
 }
-    .accordion h2 {
+   /* .accordion h2 {
 
         background: #534709;
         padding: 15px 15px;
@@ -701,8 +702,35 @@ transform: scale(1.1)
         }
         .accordion h2.active {
             background-position: right 5px;
-        }
-    .accordion ul {
+        }*/
+    .tipos h2{
+     width: 100%;
+     background: #453B07;
+     padding: 15px 15px;
+     margin: 0;
+     color: #fff;
+     border: solid 1px #bab03e;
+     border-bottom: none;
+     cursor: pointer;
+     font-size: 20px;
+}
+
+    .tipos a{
+        text-decoration: none;
+    }
+    
+
+    .tipos h2:hover {
+        background-color: #534709;
+
+    }
+    .tipos h2:active {
+        background-color: #534709;
+    }
+
+
+
+    /*.accordion ul {
         background: #bab03e;
         margin: 0;
         width: 100%;
@@ -710,9 +738,17 @@ transform: scale(1.1)
      padding: 10px 15px 20px;
      border-left: solid 1px #c4c4c4;
      border-right: solid 1px #c4c4c4;
-     */
-
+     }*/
+    .accordion ul {
+         background: #bab03e;
+         margin: 0;
+         padding: 10px 15px 20px;   
+         border-left: solid 1px #c4c4c4;
+         border-right: solid 1px #c4c4c4;
     }
+
+
+    
     .boton-disponibilidad a button{
         background: white;
         -webkit-border-radius: 50px;
@@ -780,7 +816,6 @@ transform: scale(1.1)
             margin-left: 500px;
             vertical-align: middle;
         }
-
 
 /* --------------- Contacto ---------------------!!!!!!!*/
 

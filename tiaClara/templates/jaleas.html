@@ -11,13 +11,14 @@
 			</div>
 		</div>
 		<div id="acordion" class="accordion">
-			<h2>{{ jalea0.tipos.nombre }}</h2>	
+			<a id="topSpot" class="topSpot"></a>
+				<div class="tipos"> <a href="#topSpot"><h2>{{ jalea0.tipos.nombre }}</h2></a></div>	
 			<ul class="productos">
 			{% for jalea in jaleas %}
 				{% ifchanged jalea.tipos %}
 				{% if jalea.tipos != jalea0.tipos %}
 				</ul>
-					<h2>{{ jalea.tipos.nombre }}</h2>
+					<div class="tipos"> <a href="#topSpot"><h2>{{ jalea.tipos.nombre }}</h2></a></div>
 				<ul class="productos">
 				{% endif %}
 				{% endifchanged %}

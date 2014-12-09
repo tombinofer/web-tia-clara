@@ -1,6 +1,7 @@
-{% extends 'base.html' %}
+	{% extends 'base.html' %}
 {% block titulo %} Mermeladas {% endblock %}
 {% block contenido %}
+
 
 <div class="wrapper">
 		<div class="banner">
@@ -9,14 +10,15 @@
 				<img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
 			</div>
 		</div>
-		<div id="acordion" class="accordion">
-			<h2>{{ mermelada0.tipos.nombre }}</h2>	
+		<div id="accordion" class="accordion">
+		<a id="topSpot" class="topSpot"></a>
+				<div class="tipos"> <a href="#topSpot"><h2>{{ mermelada0.tipos.nombre }}</h2></a></div>	
 			<ul class="productos">
 			{% for mermelada in mermeladas %}
 				{% ifchanged mermelada.tipos %}
 				{% if mermelada.tipos != mermelada0.tipos %}
 				</ul>
-					<h2>{{ mermelada.tipos.nombre }}</h2>
+					<div class="tipos"> <a href="#topSpot"> <h2>{{ mermelada.tipos.nombre }}</h2></a></div>
 				<ul class="productos">
 				{% endif %}
 				{% endifchanged %}

@@ -11,7 +11,22 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <script src="/js/jquery-1.11.1.min.js"></script>
-    <script src="/js/mijs.js"></script>  
+    <script type="text/javascript" src="/js/acordeon.js"></script>
+    <script type="text/javascript" src="/js/mijs.js"></script> 
+    <script type="text/javascript" src="/js/jquery.scrollTo.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script languague="javascript" type="text/javascript">
+        $(document). ready (function(){
+            ('a[href=#top]').click (function(){
+                $('html, body').animate($.scrollTo("#topSpot"); 'slow');
+                return false;
+            });
+        });
+    </script>
+
+    
+
+
 </head>
 <body>
     <header>
@@ -75,7 +90,9 @@
         </div>
     </div>
     </footer>
-    <script src="/js/menu.js"></script>
-    <script type="text/javascript" src="/js/acordeon.js"></script>
+    
+
+
+    
 </body>
 </html>

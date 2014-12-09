@@ -8,14 +8,14 @@ $( document ).ready(function(){
     // y lo vamos a alternar entre 'fixed' y 'static'.
     $(window).on('scroll', function() {
     if($(window).scrollTop() > menu_offset.top) {
-      menu.addClass('menu-fijo');
+      menu.addClass('.menu-fijo');
       $('.menu li a').animate({
                 color: white,
             }, 5000, function() {
     // Animation complete.
         });
     } else {
-      menu.removeClass('menu-fijo');
+      menu.removeClass('.menu-fijo');
     }
   });
 
