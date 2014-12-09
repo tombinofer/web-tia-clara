@@ -159,12 +159,12 @@ aside {
 .guarda {
     width: 100%;
     padding: 0px;
-    margin: 0em 2em 4.6em 0em;
+   
 }
 
 .guarda img {
     width: 100%;
-    position: absolute;
+   
 }
 /* --------------- hasta aca ------*/
 
@@ -174,7 +174,8 @@ aside {
     position: relative;
     min-width: 200px;
     /* width: 20% (medidas originales) tamaño de la marca!!!!*/
-    margin-left: 65px;
+    margin-left: 110px;
+    margin-top: 9px;
     /*agregue un margin left para alinear el logo con el frasco */
 
 }
@@ -191,8 +192,8 @@ aside {
 
 .product-image {
     display: inline-block;
-    width: 25%;
-    margin: 2em 2em 2em 4em;
+    width: 28%;
+    margin: -2em -2em 2em 4em;
 }
 .product-image p a {
     text-decoration: none;
@@ -201,6 +202,7 @@ aside {
 
 .home-products{
     margin-top: -10em;
+    margin-left: 1em;
 }
 
 .product-image img {
@@ -208,7 +210,7 @@ aside {
 }
 .product-image-description {
     display: block;
-    margin-top: -2em;
+    margin-top: 1em;
     text-align: center;
     font-weight: bold;
 }
@@ -266,7 +268,7 @@ transform: scale(1.1)
                     .product-image {
                         display: block;
                         width: 50%;
-                        margin: 5em 2em 0em 7em;
+                        margin: -4em 0em 0em 12em;
                         justify-content:center;
                     }
                         .product-image-description{
@@ -295,10 +297,11 @@ transform: scale(1.1)
 
 
                 .marca a img{
-                    width:40%;
+                    width:5%;
                     float: left;
                     margin: 1%;
-                    min-width: 300px;
+                    min-width: 150px;
+                    margin-left: 110px;
 
                  }
                     .menu-bar{
@@ -308,9 +311,9 @@ transform: scale(1.1)
 
                         .menu-bar span{
                             float: right;
-                            font-size: 300%;
+                            font-size: 250%;
                             color: #bab03e;
-                            margin: 0em 0em 0.2em 0em;
+                            margin: 0.3em 0.4em 0.2em 0em;
                          }
 
                 .menu-bar .bt-menu{
@@ -328,7 +331,7 @@ transform: scale(1.1)
                     }
 
                         .menu li a{
-                            font-size: 30px;
+                            font-size: 20px;
                            }
                          
                 }
@@ -389,12 +392,78 @@ transform: scale(1.1)
                     }
 
                 }
-                
+            /*************************************************
+                            690px
+            ***************************************************/ 
+                @media screen and (max-width: 690px) {
+                    
+
+                    .home-products{
+                        margin-left: -2em;
+                    }
+                    .product-image {
+                        display: block;
+                        width: 50%;
+                        margin: -4em 0em 0em 12em;
+                        justify-content:center;
+                    }
+                        .product-image-description{
+                            font-size: 28px;
+
+                        }
+                        .product-image-description2{
+                            font-size: 18px;
+                            margin-bottom: 5em;
+                        }
+
+
+                }
             /*************************************************
                             572px
             ***************************************************/
 
                 @media screen and (max-width: 572px) {
+
+                .home-products{
+                        margin-left: -4em;
+                    }
+                    .product-image {
+                        display: block;
+                        width: 50%;
+                        margin: -4em 0em 0em 12em;
+                        justify-content:center;
+                    }
+                        .product-image-description{
+                            font-size: 28px;
+
+                        }
+                        .product-image-description2{
+                            font-size: 18px;
+                            margin-bottom: 5em;
+                        }
+
+                    .marca a img{
+                        width:5%;
+                        float: left;
+                        margin: 1%;
+                        min-width: 150px;
+                        margin-left: 140px;
+
+                 }
+                    .menu-bar{
+                        display: block;
+                        width: 100%;
+                     }
+
+                        .menu-bar span{
+                            float: right;
+                            font-size: 250%;
+                            color: #bab03e;
+                            margin: 0.2em 0.4em 0.2em 0em;
+                         }
+
+
+
 
                 header nav{
                     width: 50%;
@@ -425,7 +494,81 @@ transform: scale(1.1)
                     }
                     
                 }
-            
+            /*************************************************
+                            500px
+            ***************************************************/
+                 @media screen and (max-width: 500px) {
+                    
+                    .home-products{
+                        margin-left: -8em;
+                    }
+                    .product-image {
+                        display: block;
+                        width: 50%;
+                        margin: 3em 0em 0em 12em;
+                        justify-content:center;
+                    }
+                        .product-image-description{
+                            font-size: 28px;
+
+                        }
+                        .product-image-description2{
+                            font-size: 18px;
+                            margin-bottom: 5em;
+                        }
+                         .marca a img{
+                            width:5%;
+                            float: left;
+                            margin: 1%;
+                            min-width: 150px;
+                            margin-left: 90px;
+
+                 }
+
+                        .guarda {
+                            width: 100%;
+                            padding: 0px;
+                           
+                        }
+
+                            .guarda img {
+                                width: 100%;
+                                height: 3em;
+
+                               
+                            }
+
+                          /* -- footer----*/
+
+                        .footer div{
+                            margin: 10px;
+                            margin-left: 10px;
+                            margin-top: 30px;
+                            display:block;
+                            width: 25%;
+                            font-size: 14px;
+                            height: 100px;
+                        }
+
+                            .datos-footer{
+                              margin: 10px;
+                              margin-left: 10px;
+                              margin-top: 30px;
+                              width: 40%;
+                              font-size: 16px;  
+                              height: 100px;
+                              display: block;  
+                                  
+                            }
+
+                                .datos-footer span{
+                                    float: right;
+                                    width: 90%;
+                                    margin: 0;
+
+                        }
+
+                }
             /*************************************************
                             572px
             ***************************************************/
@@ -459,17 +602,21 @@ transform: scale(1.1)
     background: white;
     margin: 0;
     padding: 0;
+    width: 100%;
+    }
+    .footer{
+        width: 90%;
+        margin: 0 auto 0;
     }
 
-
     .footer div{
-    margin: 10px;
-    margin-left: 10px;
-    margin-top: 30px;
-    display:inline-block;
-    width: 18%;
-    font-size: 14px;
-    height: 100px;
+        margin: 10px;
+        margin-left: 10px;
+        margin-top: 30px;
+        display:inline-block;
+        width: 200px;
+        font-size: 13px;
+        height: 100px;
     }
 
     .datos-footer {
@@ -478,14 +625,14 @@ transform: scale(1.1)
 
         .datos-footer span{
             float: right;
-            width: 65%;
+            width: 75%;
             margin: 0;
 
         }
 
         .datos-footer img{
             float: left;
-            width: 30%;
+            width: 22%;
             vertical-align: middle;
         }
 
