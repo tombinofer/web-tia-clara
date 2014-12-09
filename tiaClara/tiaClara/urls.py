@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     url(r'^otros/$','productos.views.indexOtros'),
     url(r'^contacto/', include('contact_form.urls')),
     url(r'^deployer/', include('deployer.urls')),
+    url(r'^creditos/', TemplateView.as_view(template_name="creditos.html")),
 
     #url(r"^hello.pdf$", 'productos.views.HelloPDFView.as_view()'),
 

@@ -24,17 +24,17 @@ $( document ).ready(function(){
 
 
     //para el nosotros!
-    $('#aparecer').hide();
+   /* $('#aparecer').hide();
 
     $(window).scroll(function (event) {
     var scroll = $(window).scrollLeft();
-    if (scroll < 100) {
+    if (scroll == 50) {
         $('#aparecer').fadeIn(5000);
     } else {
         $('#aparecer').hide();
     }
     });
-
+*/
     /////////para el Footer!
 
     

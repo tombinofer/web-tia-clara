@@ -2,27 +2,123 @@
 
 {% block extra_style %}
     <style type="text/css">
+        
+
         body {
             font-family: "Lato", "Helvetica", "sans-serif";
-            color: green;
+            color: black;
+        }  
+        .main h1{
+            font-size: 40px;
         }
+        .content h2 {
+            font-size: 25px;
+            height: 3em;
+            background: #534709;
+            color:white;
+        }
+         
+        .content ul li{
+                display: inline-block;
+                list-style: none;
+            }
+        
+
     </style>
 {% endblock %}
 
 {% block content %}
-
-    <div id="content">
+<body>
+    <div class="banner">
+        <img src="img/arbolito-1600x450.jpg" alt="fondo del home">
+    </div>
+    <div class="content">
         <div class="main">
- 
-            <h1>Hola papa que haces!</h1>
-     
+            <h1>Nuestros Productos</h1>
         </div>
+        <h2>Dulces</h2>
+
+            <h3>Frutas en Almíbar</h3>
+                <ul>
+                    <li>Batatitas</li>
+                    <li>Cerezas</li>
+                    <li>Durazno</li>
+                    <li>Naranja</li>
+                    <li>Frutillas</li>
+                    <li>Higo</li>
+                    <li>Quinotos</li>
+                    <li>Zapallitos</li>
+                </ul>
+            <h3>En Pan</h3>
+                <ul>
+                    <li>Manzana</li>
+                    <li>Menbrillo</li>
+                </ul>
+        <h2>Mermeladas</h2>
+            <h3>Clásicas</h3>
+                <ul>
+                    <li>Ciruela</li>
+                    <li>Damasco</li>
+                    <li>Durazno</li>
+                    <li>Frutillas</li>
+                    <li>Manzana Roja</li>
+                    <li>Manzana Verde</li>
+                    <li>Pera</li>
+                    <li>Pomelo</li>
+                </ul>
+            <h3>Gourmet</h3>
+                <ul>
+                    <li>Arándanos</li>
+                    <li>Higo</li>
+                    <li>Higo con Nuez</li>
+                    <li>Limón</li>
+                    <li>Mandarina</li>
+                    <li>Naranja</li>
+                    <li>Naranja con Nuez</li>
+                    <li>Naranja con Zanahoria</li>
+                    <li>Naranja-Limón-Mandarina</li>
+                    <li>Naranja-Manzana-Mandarina</li>
+                    <li>Rosa Mosqueta</li>
+                    <li>Tomate</li>
+                </ul>
+            <h3>Regionales</h3>
+                <ul>
+                    <li>Alcayota</li>
+                    <li>Alcayota con Nuez</li>
+                    <li>Melón</li>
+                    <li>Melón Rosado</li>
+                    <li>Sandía</li>
+                    <li>Tuna</li>
+                    <li>Uva Malbec</li>
+                    <li>Uva Rosada</li>
+                </ul>
+        <h2>Jaleas</h2>
+            <h3>Jaleas</h3>
+                <ul>
+                    <li>Membrillo</li>
+                    <li>Manzana Roja</li>
+                    <li>Manzana Verde</li>
+                    <li>Higos</li>
+                    <li>Rosa Mosqueta</li>
+                </ul> 
+        <h2>Otros</h2>
+            <h3>Dulces</h3>
+                <ul>
+                    <li>Dulce de Leche</li>                    
+                </ul>   
+            <h3>Licores</h3>
+                <ul>
+                    <li>Cola de Mono</li>
+                    <li>Ponche de Durazno</li>
+                    <li>Borgoña</li>                  
+                </ul>            
     </div>
     <footer>
          <div class="datos-footer">
-                <span>261153389738 | clara_barraza@hotmail.com | Luzuriaga 415 | Dorrego - Guaymallén - Mendoza.</span>
-                FErnando g orozco! 
+                <p>
+                    261153389738 | clara_barraza@hotmail.com | Luzuriaga 415 | Dorrego - Guaymallén - Mendoza.
+                </p>
         </div>
     </footer>
-
+</body>
 {% endblock %}
