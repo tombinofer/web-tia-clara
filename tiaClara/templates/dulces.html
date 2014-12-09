@@ -33,7 +33,9 @@
 						{% if dulce.imagen_producto != '' %}
 						<img class="frascos" src="{{ dulce.imagen_producto_vista.url }}" alt="imagen de {{ dulce.nombre }}">
 						{% endif %}
-						<p class="maridaje">{{ dulce.descripcion }}</p>
+						<div class="descripcion">
+							{{ dulce.descripcion|safe }}
+						</div>
 						<div class="consulta">
 							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
 						</div>

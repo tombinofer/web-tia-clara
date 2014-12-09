@@ -32,7 +32,9 @@
 						{% if mermelada.imagen_producto != '' %}
 						<img class="frascos" src="{{ mermelada.imagen_producto_vista.url }}" alt="imagen de {{ mermelada.nombre }}">
 						{% endif %}
-						<p class="maridaje"> {{ mermelada.descripcion }}</p>
+						<div class="descripcion">
+							{{ mermelada.descripcion|safe }}
+						</div>
 						<div class="consulta">
 							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
 						</div>

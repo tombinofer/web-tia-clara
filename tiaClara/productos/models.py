@@ -2,6 +2,7 @@
 from django.db import models
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFill
+from ckeditor.fields import RichTextField
 
 class Categoria(models.Model):
     nombre = models.CharField(max_length=200)
@@ -16,7 +17,7 @@ class Tipo(models.Model):
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=200)
-    descripcion = models.TextField(verbose_name = u"Maridaje o Receta!")
+    descripcion = RichTextField(help_text=u"Redacta una descripción",verbose_name = u"Maridaje o Receta!")
     productos_categorias = models.ManyToManyField(Categoria, verbose_name = u"Categorias")
     tipos = models.ForeignKey(Tipo)
     def __unicode__(self):              # __str__ en Python 3

@@ -33,7 +33,9 @@
 						{% if jalea.imagen_producto != '' %}
 						<img class="frascos" src="{{ jalea.imagen_producto_vista.url }}" alt="imagen de {{ jalea.nombre }}">
 						{% endif %}
-						<p class="maridaje"> {{ jalea.descripcion }}</p>
+						<div class="descripcion">
+							{{ jalea.descripcion|safe }}
+						</div>
 						<div class="consulta">
 							<img src="/img/boton-consultar-disponibilidad.png" alt="boton consulta">
 						</div>
