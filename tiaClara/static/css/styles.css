@@ -180,16 +180,24 @@ aside {
 
 }
 .sello{
-    width: 10%;
+    width: 110px;
+    float: left;
+    position: relative;
+    margin-top: -350px;
+    margin-left: 85%;
+    z-index: 2;
 }
+
+
+/*
 .sello img{
     float: left;
     position: relative;
     margin-top: -350px;
-    margin-left: 1100px;
+    margin-left: -10%;
     z-index: 2;
 }
-
+*/
 .product-image {
     display: inline-block;
     width: 28%;
@@ -241,12 +249,17 @@ transform: scale(1.1)
                             1203px
             ***************************************************/
                 @media screen and (max-width: 1203px) {
-                    .sello img{
+                    
+                    .sello{
+                        width: 110px;
                         float: left;
-                        margin-top: -200px;
-                        margin-left: 700px;
-
+                        position: relative;
+                        margin-top: -290px;
+                        margin-left: 85%;
+                        z-index: 2;
                     }
+
+
                     .home-products{
 
                     }
@@ -498,7 +511,12 @@ transform: scale(1.1)
                             500px
             ***************************************************/
                  @media screen and (max-width: 500px) {
-                    
+
+
+                    /******nosotros**********************/
+             
+            
+                /****************************/
                     .home-products{
                         margin-left: -8em;
                     }
@@ -567,6 +585,28 @@ transform: scale(1.1)
                                     width: 70%;
                                     margin: 0;
 
+                        }
+
+
+                        .historia{
+                            width: 50%;
+    
+                        }
+
+                        .imagenes-asociadas{
+                     
+                            margin-top: 17px;
+                            margin-right: 15%;
+
+                        }
+                            .imagenes-asociadas img{
+                               
+                            }
+
+                        .nuestra-historia {
+                            width: 100%;
+                          
+                
                         }
 
                 }
@@ -656,15 +696,30 @@ transform: scale(1.1)
             width: 100%;
         }
 
+    .historia{
+        width: 100%;
+        display: inline-block;
+    }
+
     .imagenes-asociadas{
-        text-align: center;
+ 
+        width: 50%;
+        float: right;
+        margin-top: 17px;
+        margin-right: 15%;
+
     }
         .imagenes-asociadas img{
-            margin:15px;
+            margin:10px;
         }
 
     .nuestra-historia {
-    -webkit-column-count:3;
+        width: 21%;
+        min-width: 200px;
+        margin-left: 9%;
+        float: left;
+    }
+    /*-webkit-column-count:3;
     -moz-column-count:3;
     column-count:3;
     margin: 2em 5em 2em 5em;
@@ -672,7 +727,7 @@ transform: scale(1.1)
     -webkit-column-gap:50px;
     -moz-column-gap:50px;
     columnn-gap: 50px;
-    }
+    }*/
 
 
 
@@ -704,7 +759,6 @@ transform: scale(1.1)
             background-position: right 5px;
         }*/
     .tipos h2{
-     width: 100%;
      background: #453B07;
      padding: 15px 15px;
      margin: 0;
@@ -742,19 +796,18 @@ transform: scale(1.1)
     .accordion ul {
          background: #bab03e;
          margin: 0;
-         padding: 10px 15px 20px;   
-         border-left: solid 1px #c4c4c4;
-         border-right: solid 1px #c4c4c4;
+       
     }
 
 
     
     .boton-disponibilidad a button{
         background: white;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 20px;
-        border:1px solid #CCCCCC;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        padding: 5px 5px 5px 5px;
+        border:2px solid #453B07;       
         padding: 5px 5px 5px 5px;
         color: #534709;
         height: 4em;
@@ -790,6 +843,7 @@ transform: scale(1.1)
 
     .frascos{
         margin-top: -300px;
+        margin-left: 65px;
         width: 40%;
         z-index: 3;
 
@@ -813,7 +867,7 @@ transform: scale(1.1)
 
         .franja-blanca h3{
             color: black;
-            margin-left: 500px;
+            margin-left: 42%;
             vertical-align: middle;
         }
 
@@ -826,6 +880,12 @@ transform: scale(1.1)
 }
 input, textarea{
     width: 100%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 5px 5px 5px 5px;
+    border:2px solid #A69821;
+
 }
     .enviar input{
         width: 140px;
@@ -843,24 +903,45 @@ input, textarea{
         margin:0;
         padding: 0;
     }
-    .contacto.footer{
-        background: green;
+
+    .contacto{
+        
     }
+    
+    .boton-enviar button{
+        background: white;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        border:2px solid #453B07;
+        padding: 5px 5px 5px 5px;
+        color: #534709;
+        height: 2em;
+        width: 8em;
+
+
+    }
+
+  
     .formulario{
         width: 50%;
         float: right;
+        margin-top: 20px;
+
 
     }
     .conjunto-de-producto img{
         width: 20%;
-        margin-left: 10%;
+        margin-left: 11%;
+        margin-top: -15%;
 
     }
     .texto{
         float: left;
         width: 40%;
-        margin-left: 5%;
-        margin-top: -2em;
+        margin-left: 9%;
+        margin-top: -0.5em;
+
     }
 
         .texto h4{
