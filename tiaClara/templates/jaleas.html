@@ -34,17 +34,17 @@
 						{% if jalea.imagen_producto != '' %}
 						<img class="frascos" src="{{ jalea.imagen_producto_vista.url }}" alt="imagen de {{ jalea.nombre }}">
 						{% endif %}
-						<div class="descripcion">
-							{{ jalea.descripcion|safe }}
-						</div>
-						<div class="boton-disponibilidad" >
-							<a href="/contacto/#formContact">
-								<button type="button">
-									Consultar <br>
-									Disponibilidad
-								</button> 
-							</a>
-						</div>
+							<div class="descripcion">
+								{{ jalea.descripcion|safe }}
+							</div>
+							<div class="boton-disponibilidad" >
+								<a href="/contacto/#formContact">
+									<button type="button">
+										Consultar <br>
+										Disponibilidad
+									</button> 
+								</a>
+							</div>
 						<div class="guarda">
 							<img src="/img/guarda-tia-clara.png" alt="guarda/back">
 						</div>

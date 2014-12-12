@@ -254,7 +254,7 @@ transform: scale(1.1)
                         width: 110px;
                         float: left;
                         position: relative;
-                        margin-top: -290px;
+                        margin-top: -30%;
                         margin-left: 85%;
                         z-index: 2;
                     }
@@ -293,10 +293,10 @@ transform: scale(1.1)
 
                 }
             /*************************************************
-                            1076px
+                            1020px
             ***************************************************/
 
-                @media screen and (max-width: 1076px) {
+                @media screen and (max-width: 1020px) {
                 /* ----BASE.HTML---*/
                   header nav{
                     width: 50%;
@@ -357,9 +357,9 @@ transform: scale(1.1)
 
                 .sello img{
                         float: left;
-                        margin-top: -200px;
+                        margin-top: -400px;
                         margin-left: 700px;
-                        width: 100%;
+                        width: 100%;    
                     }
                 /* -- footer----*/
 
@@ -782,7 +782,9 @@ transform: scale(1.1)
         background-color: #534709;
     }
 
-
+    .tipos li{
+        display: inline-block;
+    }
 
     /*.accordion ul {
         background: #bab03e;
@@ -798,9 +800,7 @@ transform: scale(1.1)
          margin: 0;
        
     }
-
-
-    
+  
     .boton-disponibilidad a button{
         background: white;
         -webkit-border-radius: 7px;
@@ -812,6 +812,9 @@ transform: scale(1.1)
         color: #534709;
         height: 4em;
         width: 8em;
+        margin-right: 130px;
+        margin-top: -210px;
+ 
 
     }
 
@@ -840,6 +843,13 @@ transform: scale(1.1)
         background:#bab03e;
         list-style: none;
     }
+    
+    .descripcion {
+        width: 300px;
+        margin-right: 30%;
+        float: right;
+        margin-top: 1%;
+    }
 
     .frascos{
         margin-top: -300px;
@@ -854,6 +864,7 @@ transform: scale(1.1)
         margin: 0;
         padding: 0;
     }
+
     .banner-productos img{
         width: 100%;
     }
@@ -862,13 +873,14 @@ transform: scale(1.1)
         background: #FFFFFF;
         margin-top: -23px;
         height: 3em;
-        z-index: 1;
+        z-index: 10;
     }
 
         .franja-blanca h3{
             color: black;
             margin-left: 42%;
             vertical-align: middle;
+            margin-top: 20px;
         }
 
 /* --------------- Contacto ---------------------!!!!!!!*/
