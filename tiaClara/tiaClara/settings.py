@@ -31,7 +31,10 @@ ADMINS = (
     (u'Fernando Orozco', 'fernandogorozco@gmail.com'),
 )
 
-MANAGERS = ADMINS
+MANAGERS = (
+    (u'Clara Barraza', 'clara_barraza@hotmail.com'),
+    (u'Fernando Orozco', 'fernandogorozco@gmail.com'),
+)
 
 # Application definition
 

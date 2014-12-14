@@ -2,10 +2,43 @@
 {% load i18n %}
 {% block titulo %}{% trans "Contacto Realizado" %}{% endblock %}
 {% block contenido %}
-    <section class="main style3">
-        <article id="contact-sent">
-                <strong>{% trans "Gracias!" %}</strong>
-                <p>{% trans "Su mensaje ha sido enviado exitosamente, le responderemos a la brevedad posible." %}</p>
-        </article>
-    </section>
+    <div class="wrapper">
+         <div class="banner">
+
+            <img src="/img/contacto-banner-mendoza-fruit-trees-1600x450.jpg" alt="fondo de contacto">
+            <div class="sello">
+                <img src="/img/sello-mendoza-argentina-producto-artesanal.png" alt="sello">
+            </div> 
+        </div>
+         <div class="contacts-content">
+           
+            <div class="formulario">
+                <article id="contact-sent">
+                    <strong>{% trans "Gracias!" %}</strong>
+                    <p>{% trans "Su mensaje ha sido enviado exitosamente, le responderemos a la brevedad posible." %}</p>
+                </article>
+                <a href="/"> Sitio Principal </a>
+            </div>
+        </div>
+
+
+        <div class="contacto">
+                    <div class="conjunto-de-producto">
+                        <img src="/img/contacto-productos-en-conjunto.png" alt="productos">
+                    </div> 
+                    <div class="texto">
+                        <h4>Podés encontrar nuestros productos aquí:</h4>
+                        <p>Plaza de Chacras | Chacras de Coria 
+                            Luján de Cuyo | Mza. <br>
+                        Domingos de 10.00 a 19.00 hs.</p>
+                        <h4>O pedirlos por encargo:</h4>
+                        <p>261153389738 | clara_barraza@hotmail.com <br> 
+                        Luzuriaga 415 | Dorrego - Guaymallén - Mza.</p>
+                    </div>
+                   
+        </div> 
+         <div class="guarda">
+            <img src="/img/guarda-tia-clara.png" alt="guarda">
+        </div>
+    </div>
 {% endblock %}
