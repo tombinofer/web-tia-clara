@@ -21,7 +21,7 @@
     z-index: 1000;
     /*background-color: rgba(0, 20, 0, 0.8);*/
     /*background-color: rgba(0,0,0,0.3);*/
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255);
 }
 /*******************************************************************/
 /* Para agregar el icono de Menu **********************************/
@@ -93,7 +93,10 @@ aside {
 }
 
 .menu {
-    margin-right: 65px;
+    margin-right: 2%;
+}
+.menu .selected {
+    border-bottom: 2px solid #8C1B14;
 }
 
 .menu li {
@@ -268,16 +271,22 @@ transform: scale(1.1)
                         width: 22%;
                         margin: 2em 2em 2em 4em;
                     }
+                    .menu li {
+                        display:inline-block;
+                        font-size: 16px; 
+                        position: relative;
+                        margin: 0em 2em 1em 0em;
+                        padding: 0.1em;
+                        float: left;
+
                 }
+            }
             /*************************************************
                             891px
             ***************************************************/
 
                 @media screen and (max-width: 891px) {
 
-                    .home-products{
-
-                    }
                     .product-image {
                         display: block;
                         width: 50%;
@@ -357,9 +366,9 @@ transform: scale(1.1)
 
                 .sello img{
                         float: left;
-                        margin-top: -400px;
-                        margin-left: 700px;
-                        width: 100%;    
+                        margin-top: 20%;
+                        margin-left: -45%;
+                        width: 80%;    
                     }
                 /* -- footer----*/
 
@@ -511,12 +520,14 @@ transform: scale(1.1)
                             500px
             ***************************************************/
                  @media screen and (max-width: 500px) {
-
+                
 
                     /******nosotros**********************/
              
             
                 /****************************/
+                    
+
                     .home-products{
                         margin-left: -8em;
                     }
@@ -610,31 +621,7 @@ transform: scale(1.1)
                         }
 
                 }
-            /*************************************************
-                            572px
-            ***************************************************/
-/*
-                @media screen and (min-width: 400px) and (max-width: 1024px) {
-                    
-                    .body {
-                        background: #FFFFFF url(/img/arbolito-nueva-medida.jpg);
-                    }
-                    .banner{
-                        visibility: hidden;
-                    }
-                }
 
-
-                @media screen and (max-width: 399px) {
-                    
-                    .body {
-                        background: #FFFFFF url(/img/arbolito-nueva-medida.jpg);
-                    }
-                    .banner{
-                        visibility: hidden;
-                    }
-                }
-*/
 
 /* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ----------!!!!!!!*/
 
@@ -697,8 +684,8 @@ transform: scale(1.1)
         }
 
     .historia{
-        width: 100%;
         display: inline-block;
+        margin-left: 58px;
     }
 
     .imagenes-asociadas{
@@ -878,7 +865,7 @@ transform: scale(1.1)
 
         .franja-blanca h3{
             color: black;
-            margin-left: 42%;
+            margin-left: 47.5%;
             vertical-align: middle;
             margin-top: 20px;
         }
