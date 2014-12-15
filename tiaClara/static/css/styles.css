@@ -23,6 +23,22 @@
     /*background-color: rgba(0,0,0,0.3);*/
     background-color: rgba(255,255,255);
 }
+
+.menu .selected {
+    color: #000000;
+    background: green; 
+}
+
+.activo {
+    color: green;
+    background: pink; 
+}
+
+#menu_principal a.selected{
+    background:pink;
+}
+
+
 /*******************************************************************/
 /* Para agregar el icono de Menu **********************************/
 
@@ -95,9 +111,7 @@ aside {
 .menu {
     margin-right: 2%;
 }
-.menu .selected {
-    border-bottom: 2px solid #8C1B14;
-}
+
 
 .menu li {
     display:inline-block;
@@ -132,6 +146,7 @@ aside {
 .menu li a:hover{
     color: #000000; 
 }
+
 
 .menu-bar{
     display: none;
