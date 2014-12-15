@@ -269,12 +269,13 @@ transform: scale(1.1)
                 @media screen and (max-width: 1203px) {
                     
                     .sello{
-                        width: 110px;
+                        width: 10%;
                         float: left;
                         position: relative;
-                        margin-top: -30%;
-                        margin-left: 85%;
+                        margin-top: -25%;
+                        margin-left: 75%;
                         z-index: 2;
+                        min-width: 40px;
                     }
 
 
@@ -565,7 +566,7 @@ transform: scale(1.1)
                             float: left;
                             margin: 1%;
                             min-width: 150px;
-                            margin-left: 90px;
+                            margin-left: 15%;
 
                  }
 
@@ -577,7 +578,7 @@ transform: scale(1.1)
 
                             .guarda img {
                                 width: 100%;
-                                height: 3em;
+                                height: 2em;
 
                                
                             }
@@ -762,7 +763,7 @@ transform: scale(1.1)
         }*/
     .tipos h2{
      background: #453B07;
-     padding: 15px 15px;
+     padding: 15px 16%;
      margin: 0;
      color: #fff;
      border: solid 1px #bab03e;
@@ -814,8 +815,9 @@ transform: scale(1.1)
         color: #534709;
         height: 4em;
         width: 8em;
-        margin-right: 130px;
-        margin-top: -210px;
+        margin-right: 23%;
+        margin-top: 10px;
+        margin-left: 18%;
  
 
     }
@@ -847,17 +849,18 @@ transform: scale(1.1)
     }
     
     .descripcion {
-        width: 300px;
+        width: 50%;
         margin-right: 30%;
-        float: right;
         margin-top: 1%;
+        margin-left: 18%;
     }
 
     .frascos{
-        margin-top: -300px;
-        margin-left: 65px;
+        margin-top: -20%;
+        margin-left: 15%;
         width: 40%;
         z-index: 3;
+        min-width: 100px;
 
     }
 
@@ -880,7 +883,7 @@ transform: scale(1.1)
 
         .franja-blanca h3{
             color: black;
-            margin-left: 47.5%;
+            margin-left: 55%;
             vertical-align: middle;
             margin-top: 20px;
         }
