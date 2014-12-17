@@ -324,13 +324,14 @@ transform: scale(1.1)
                 @media screen and (max-width: 1020px) {
                 /* ----BASE.HTML---*/
                   header nav{
-                    width: 50%;
+                    width: 30%;
                     height: 100%;
                     margin: 0;
                     position: fixed;
                     left: -110%;
                     z-index: 1000;
-                    min-width: 100px;
+                    min-width: 210px;
+                    margin-top: 50px;
                   }
 
 
@@ -504,13 +505,14 @@ transform: scale(1.1)
 
 
                 header nav{
-                    width: 50%;
+                    width: 30%;
                     height: 100%;
                     margin: 0;
                     position: fixed;
                     left: -110%;
                     z-index: 1000;
-                    min-width: 100px;
+                    min-width: 210px;
+                    margin-top: 50px;
                   }
                 .menu li {
                     display:block;
@@ -917,8 +919,9 @@ input, textarea{
         text-align:left
     }
     .contacts-content{
-        margin:0;
+        margin: 0;
         padding: 0;
+        display: block;
     }
 
     .contacto{
@@ -941,21 +944,28 @@ input, textarea{
 
   
     .formulario{
-        width: 50%;
+        
+        width: 40%;
+        min-width: 170px;
         float: right;
         margin-top: 20px;
+        margin-right: 2%;
 
 
     }
     .conjunto-de-producto img{
+
+
         width: 20%;
-        margin-left: 11%;
+        min-width: 150px;
+        margin-left: 9%;
         margin-top: -15%;
 
     }
     .texto{
         float: left;
         width: 40%;
+        min-width: 180px;
         margin-left: 9%;
         margin-top: -0.5em;
 
