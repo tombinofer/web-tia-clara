@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block titulo %} Cervezas {% endblock %}
+
+{% block contenido %}
+
+<div class="wrapper" id="cervezas">
+        <div class="banner">
+            <img src="{{ banner.imagen_pagina_principal.url }}" alt="fondo de cervezas">
+            <div class="sello">
+                <img src="/img/sello-producto-artesanal-130x130.png" alt="sello">
+            </div>
+        </div>
+        <div id="acordion" class="accordion">
+        <a id="topSpot" class="topSpot"></a>
+                <div class="tipos"> <a href="#topSpot"><h2>{{ cerveza0.tipos.nombre }}</h2></a></div> 
+            <ul class="productos">
+            {% for cerveza in cervezas %}
+                {% ifchanged cerveza.tipos %}
+                {% if cerveza.tipos != cerveza0.tipos %}
+                </ul>
+                    <div class="tipos"> <a href="#topSpot"><h2>{{ cerveza.tipos.nombre }}</h2></a></div>
+                <ul class="productos">
+                {% endif %}
+                {% endifchanged %}
+                    <li>
+                        {% if cerveza.imagen_banner != '' %}
+                        <div class="banner-productos">
+                            <img src="{{ cerveza.imagen_banner_producto.url }}" alt="banner de {{ cerveza.nombre }}">
+                        </div>
+                        {% endif %}
+                        <div class="franja-blanca">
+                            <h3>{{ cerveza.nombre }}</h3>
+                        </div>
+                        {% if cerveza.imagen_producto != '' %}
+                        <img class="frascos" src="{{ cerveza.imagen_producto_vista.url }}" alt="imagen de {{ cerveza.nombre }}">
+                        {% endif %}
+                        <div class="descripcion">
+                            {{ cerveza.descripcion|safe }}
+                        </div>
+                        <div class="boton-disponibilidad" >
+                            <a href="/contacto/#formContact">
+                                <button type="button">
+                                    Consultar <br>
+                                    Disponibilidad
+                                </button> 
+                            </a>
+                        </div>  
+                        <div class="guarda">
+                            <img src="/img/guarda-tia-clara.png" alt="guarda/back">
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </div>
+</div>
+
+{% endblock %}

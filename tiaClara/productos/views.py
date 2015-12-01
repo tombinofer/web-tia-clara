@@ -33,6 +33,12 @@ def indexJaleas(request):
     productos = categoria_jalea.producto_set.all().order_by('tipos__nombre')
     return render_to_response("jaleas.html",{"jaleas":productos, "jalea0":productos[0], "banner":banner},context_instance=RequestContext(request))
 
+def indexCervezas(request):
+    banner = Pagina.objects.get(nombre="Cervezas")
+    categoria_cerveza = Categoria.objects.get(nombre="Cervezas")
+    productos = categoria_cerveza.producto_set.all().order_by('tipos__nombre')
+    return render_to_response("cervezas.html",{"cervezas":productos, "cerveza0":productos[0], "banner":banner},context_instance=RequestContext(request))
+
 def indexOtros(request):
     banner = Pagina.objects.get(nombre="Otros")
     categoria_otro = Categoria.objects.get(nombre="Otros")
